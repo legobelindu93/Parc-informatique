@@ -1,0 +1,27 @@
+{
+  "softthinks sas": {
+    "pays": "US",
+    "site": "",
+    "metier_defaut": ""
+  },
+  "1.8.9": {
+    "pays": "GB",
+    "site": "",
+    "metier_defaut": ""
+  },
+  "conemu-maximus5": {
+    "pays": "US",
+    "site": "",
+    "metier_defaut": ""
+  },
+  "samuel vasko": {
+    "pays": "US",
+    "site": "",
+    "metier_defaut": ""
+  },
+  "tim kosse": {
+    "pays": "DE",
+    "site": "",
+    "metier_defaut": ""
+  }
+}

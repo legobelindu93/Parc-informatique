@@ -1,0 +1,5 @@
+flask>=2.0
+requests>=2.25
+fpdf2>=2.5
+openpyxl>=3.0
+gunicorn>=20.0

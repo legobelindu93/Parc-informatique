@@ -1,0 +1,2807 @@
+{
+  "protobuf-java-3.24.4.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "pt-cep-java-framework-8.1.0.0.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "putty.exe": {
+    "version": "0.84.0",
+    "source": "putty",
+    "derniere_verification": "2026-07-30"
+  },
+  "putty_standalone.exe": {
+    "version": "0.84.0",
+    "source": "putty",
+    "derniere_verification": "2026-07-30"
+  },
+  "puttygen.exe": {
+    "version": "0.84.0",
+    "source": "putty",
+    "derniere_verification": "2026-07-30"
+  },
+  "pyright-python-langserver.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "pyright-python.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python-3.12.7-amd64.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python-argcomplete-check-easy-install-script.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python-windows.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python3": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python3.12.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python3.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "python312": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "pythonservice.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "pythonw.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "redis-benchmark.exe": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "redis-check-aof.exe": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "redis-check-rdb.exe": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "redis-cli.exe": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "redis-server.exe": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "register-python-argcomplete.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "rust-extension-1.0.10.jar": {
+    "version": "1.97.1",
+    "source": "rust",
+    "derniere_verification": "2026-07-30"
+  },
+  "rustup-init.exe": {
+    "version": "1.97.1",
+    "source": "rust",
+    "derniere_verification": "2026-07-30"
+  },
+  "steam_monitor.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamerrorreporter.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamerrorreporter64.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamredownloadfixer32.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamredownloadfixer64.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamservice.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamsysinfo.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamwebhelper.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamxboxutil.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steamxboxutil64.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "trust.exe": {
+    "version": "1.97.1",
+    "source": "rust",
+    "derniere_verification": "2026-07-30"
+  },
+  "unirest-java-3.1.04.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "vcredist140": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "vcredist2015": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "xnafx40_redist.msi": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "zoomify-2.15.1+1.20.1.jar": {
+    "version": "7.1.5.43453",
+    "source": "zoom",
+    "derniere_verification": "2026-07-30"
+  },
+  "zoomify-2.15.2+1.21.5.jar": {
+    "version": "7.1.5.43453",
+    "source": "zoom",
+    "derniere_verification": "2026-07-30"
+  },
+  "2013_vcredist_x86.exe": {
+    "version": "8.10.1",
+    "source": "redis",
+    "derniere_verification": "2026-09-01"
+  },
+  "3dmarksteelnomad.exe": {
+    "version": "1.5.8",
+    "source": "hashicorp",
+    "derniere_verification": "2026-09-01"
+  },
+  "audacity 3.7.7": {
+    "version": "3.7.8",
+    "source": "audacity",
+    "derniere_verification": "2026-09-01"
+  },
+  "audacity.exe": {
+    "version": "3.7.8",
+    "source": "audacity",
+    "derniere_verification": "2026-09-01"
+  },
+  "bpsr_steam.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-09-01"
+  },
+  "blender": {
+    "version": "5.2.1",
+    "source": "blender",
+    "derniere_verification": "2026-09-01"
+  },
+  "brjarpacker.exe": {
+    "version": "1.16.0",
+    "source": "hashicorp",
+    "derniere_verification": "2026-09-01"
+  },
+  "cod-bo-ii-steamrip.com": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-09-01"
+  },
+  "certtrusttool.exe": {
+    "version": "1.98.0",
+    "source": "rust",
+    "derniere_verification": "2026-09-01"
+  },
+  "configurable-2.2.3-fabric-yarn+1.20.1.jar": {
+    "version": "1.22.22",
+    "source": "npm_package",
+    "derniere_verification": "2026-09-01"
+  },
+  "designerjavautils.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-09-01"
+  },
+  "discord.exe": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-09-01"
+  },
+  "discordhookhelper.exe": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-09-01"
+  },
+  "discordhookhelper64.exe": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-09-01"
+  },
+  "discordipc-0.5.jar": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-09-01"
+  },
+  "discordsystemhelper.exe": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-09-01"
+  },
+  "docker desktop": {
+    "version": "19.03.14",
+    "source": "docker",
+    "derniere_verification": "2026-09-01"
+  },
+  "docker desktop installer.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-09-01"
+  },
+  "docker desktop updater-210994 (213807).exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-09-01"
+  },
+  "docker desktop.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-09-01"
+  },
+  "dockercli.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-09-01"
+  },
+  "easteamproxy.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-09-01"
+  },
+  "fivem_steamchild.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-09-01"
+  },
+  "forgeconfigapiport-v8.0.3-1.20.1-fabric.jar": {
+    "version": "26.2.1",
+    "source": "pypi",
+    "derniere_verification": "2026-09-01"
+  },
+  "fulltrustnotifier.exe": {
+    "version": "1.98.0",
+    "source": "rust",
+    "derniere_verification": "2026-09-01"
+  },
+  "gameinputredistservice.exe": {
+    "version": "8.10.1",
+    "source": "redis",
+    "derniere_verification": "2026-09-01"
+  },
+  "github.ui.exe": {
+    "version": "2.55.0.5",
+    "source": "git",
+    "derniere_verification": "2026-09-01"
+  },
+  "gitlab.ui.exe": {
+    "version": "2.55.0.5",
+    "source": "git",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreoffice 25.8.4.2": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreoffice_25.8.6.2_win_x86-64.msi": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "logitech g hub": {
+    "version": "2.55.0.5",
+    "source": "git",
+    "derniere_verification": "2026-09-01"
+  },
+  "msteams": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-09-01"
+  },
+  "microsoft .net native runtime package 2ôçª microsoft.dotnet.native.runtime": {
+    "version": "10.0.10",
+    "source": "dotnet",
+    "derniere_verification": "2026-07-30"
+  },
+  "microsoft .net native runtime pacôçª microsoft.dotnet.native.runtime": {
+    "version": "10.0.11",
+    "source": "dotnet",
+    "derniere_verification": "2026-09-01"
+  },
+  "microsoft windows desktop runtime - 6.0ôçª microsoft.dotnet.desktopruntime.6": {
+    "version": "10.0.10",
+    "source": "dotnet",
+    "derniere_verification": "2026-07-30"
+  },
+  "microsoft windows desktop runtime - 8.0ôçª microsoft.dotnet.desktopruntime.8": {
+    "version": "10.0.10",
+    "source": "dotnet",
+    "derniere_verification": "2026-07-30"
+  },
+  "microsoft.templateengine.vscode.tool.exe": {
+    "version": "1.135.0",
+    "source": "github_releases",
+    "derniere_verification": "2026-09-01"
+  },
+  "microsoft.visualstudio.githubprotocolhandler.msi.msi": {
+    "version": "2.55.0.5",
+    "source": "git",
+    "derniere_verification": "2026-09-01"
+  },
+  "microsoft.visualstudio.setup.testpowershell.ps1": {
+    "version": "5.1.14409.20180811",
+    "source": "powershell",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysql installer": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysql server 8.0": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysql workbench 8.0 ce": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysqlinstaller.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysqlinstallerconsole.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysqlinstallerlauncher.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysqlinstallerupdater.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysqlshellworkbench.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "mysqlworkbench.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-09-01"
+  },
+  "nclauncherfromfirefox.exe": {
+    "version": "153.0.1",
+    "source": "mozilla_product",
+    "derniere_verification": "2026-07-30"
+  },
+  "node.js": {
+    "version": "26.5.1",
+    "source": "nodejs",
+    "derniere_verification": "2026-07-30"
+  },
+  "openoffice 4.1.13": {
+    "version": "4.1.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "pc-building-sim-2-steamrip.com": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "postgresql 18": {
+    "version": "18.4.0",
+    "source": "postgresql",
+    "derniere_verification": "2026-07-30"
+  },
+  "powershell_ise.exe": {
+    "version": "5.1.14409.20180811",
+    "source": "powershell",
+    "derniere_verification": "2026-07-30"
+  },
+  "python launcher": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "pythonwin.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "rockstarsteamhelper.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "sdk arm64 redistributables-x86_en-us.msi": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "scriptproviderforjava.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "scriptproviderforjavascript.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "sendsignal-x64.exe": {
+    "version": "8.20.0",
+    "source": "signal",
+    "derniere_verification": "2026-07-30"
+  },
+  "sendsignal.exe": {
+    "version": "8.20.0",
+    "source": "signal",
+    "derniere_verification": "2026-07-30"
+  },
+  "sendsignalctrlc-x64.exe": {
+    "version": "8.20.0",
+    "source": "signal",
+    "derniere_verification": "2026-07-30"
+  },
+  "sendsignalctrlc.exe": {
+    "version": "8.20.0",
+    "source": "signal",
+    "derniere_verification": "2026-07-30"
+  },
+  "solar-putty.exe": {
+    "version": "0.84.0",
+    "source": "putty",
+    "derniere_verification": "2026-07-30"
+  },
+  "steam": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "steam.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "teamviewer": {
+    "version": "15.79.4",
+    "source": "teamviewer",
+    "derniere_verification": "2026-07-30"
+  },
+  "teamviewer.exe": {
+    "version": "15.79.4",
+    "source": "teamviewer",
+    "derniere_verification": "2026-07-30"
+  },
+  "teamviewer_desktop.exe": {
+    "version": "15.79.4",
+    "source": "teamviewer",
+    "derniere_verification": "2026-07-30"
+  },
+  "teamviewer_note.exe": {
+    "version": "15.79.4",
+    "source": "teamviewer",
+    "derniere_verification": "2026-07-30"
+  },
+  "teamviewer_service.exe": {
+    "version": "15.79.4",
+    "source": "teamviewer",
+    "derniere_verification": "2026-07-30"
+  },
+  "terrablender-fabric-1.20.1-3.0.1.10.jar": {
+    "version": "5.2.0",
+    "source": "blender",
+    "derniere_verification": "2026-07-30"
+  },
+  "universal crt redistributable-x86_en-us.msi": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "vcxprojreader.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "wcfirefoxextn.jar": {
+    "version": "153.0.1",
+    "source": "mozilla_product",
+    "derniere_verification": "2026-07-30"
+  },
+  "wpt redistributables-x86_en-us.msi": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "wsl: docker-desktop": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "windows sdk redistributables-x86_en-us.msi": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "wireshark 4.6.3 x64": {
+    "version": "4.6.7",
+    "source": "wireshark",
+    "derniere_verification": "2026-07-30"
+  },
+  "wireshark.exe": {
+    "version": "4.6.7",
+    "source": "wireshark",
+    "derniere_verification": "2026-07-30"
+  },
+  "zoomit.exe": {
+    "version": "7.1.5.43453",
+    "source": "zoom",
+    "derniere_verification": "2026-07-30"
+  },
+  "zoomit64.exe": {
+    "version": "7.1.5.43453",
+    "source": "zoom",
+    "derniere_verification": "2026-07-30"
+  },
+  "activate-global-python-argcomplete.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "ant-javamail.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "audacity-win-3.7.7-64bit.exe": {
+    "version": "3.7.8",
+    "source": "audacity",
+    "derniere_verification": "2026-07-30"
+  },
+  "bcpkix-jdk18on-1.79.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "bcprov-jdk18on-1.79.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "bcutil-jdk18on-1.79.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "blender-5.0.0-windows-x64.msi": {
+    "version": "5.2.0",
+    "source": "blender",
+    "derniere_verification": "2026-07-30"
+  },
+  "blender-launcher.exe": {
+    "version": "5.2.0",
+    "source": "blender",
+    "derniere_verification": "2026-07-30"
+  },
+  "blender.exe": {
+    "version": "5.2.0",
+    "source": "blender",
+    "derniere_verification": "2026-07-30"
+  },
+  "checkredist.exe": {
+    "version": "8.10.0",
+    "source": "redis",
+    "derniere_verification": "2026-07-30"
+  },
+  "chktrust.exe": {
+    "version": "1.97.1",
+    "source": "rust",
+    "derniere_verification": "2026-07-30"
+  },
+  "chocolatey-dotnetfx.extension": {
+    "version": "10.0.10",
+    "source": "dotnet",
+    "derniere_verification": "2026-07-30"
+  },
+  "com.adobe.csi.pipes.jar": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "com.docker.admin.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "com.docker.backend.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "com.docker.build.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "com.docker.diagnose.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "com.docker.llama-server.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "com.docker.nv-gpu-info.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "com.docker.vmm.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "com.microsoft.java.debug.plugin-0.53.2.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "com_github_jdiemke_delaunay-triagulator-1.0.0-95ea42ba2aa460.jar": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "curl.exe": {
+    "version": "8.21.0",
+    "source": "curl",
+    "derniere_verification": "2026-07-30"
+  },
+  "debugjava.bat": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "debugjava.ps1": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "discord-game-sdk-3.2.1-natives-windows.jar": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-07-30"
+  },
+  "discord-rpc-2.0.1.jar": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-07-30"
+  },
+  "dnsjava-2.1.8.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-ai.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-buildx.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-compose.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-credential-desktop.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-credential-ecr-login.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-credential-wincred.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-debug.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-desktop.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-extension.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-init.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-machine-driver-vmware.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-mcp.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-model.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-offload.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-pass.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-sandbox.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-sandboxd.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-sbom.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker-scout.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "docker.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "dockerd.exe": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "dotnetfx": {
+    "version": "10.0.10",
+    "source": "dotnet",
+    "derniere_verification": "2026-07-30"
+  },
+  "edit-git-bash.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "fdiscord-0.0.1-natives-windows.jar": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-07-30"
+  },
+  "fdiscord-0.0.1.jar": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-07-30"
+  },
+  "filezilla.exe": {
+    "version": "3.70.6",
+    "source": "filezilla",
+    "derniere_verification": "2026-07-30"
+  },
+  "findpython.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "firefox.exe": {
+    "version": "153.0.1",
+    "source": "mozilla_product",
+    "derniere_verification": "2026-07-30"
+  },
+  "firefox_.exe": {
+    "version": "153.0.1",
+    "source": "mozilla_product",
+    "derniere_verification": "2026-07-30"
+  },
+  "fzputtygen.exe": {
+    "version": "0.84.0",
+    "source": "putty",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-add.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-am.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-annotate.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-apply.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-archive.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-askpass.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-askyesno.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-bash.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-bisect--helper.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-blame.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-branch.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-bugreport.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-bundle.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-cat-file.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-check-attr.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-check-ignore.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-check-mailmap.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-check-ref-format.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-checkout--worker.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-checkout-index.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-checkout.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-cherry-pick.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-cherry.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-clean.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-clone.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-cmd.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-column.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-commit-graph.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-commit-tree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-commit.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-config.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-count-objects.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-credential-cache--daemon.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-credential-cache.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-credential-helper-selector.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-credential-manager-core.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-credential-manager.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-credential-store.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-credential-wincred.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-credential.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-daemon.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-describe.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-diff-files.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-diff-index.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-diff-tree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-diff.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-difftool.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-env--helper.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-fast-export.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-fast-import.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-fetch-pack.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-fetch.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-fmt-merge-msg.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-for-each-ref.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-for-each-repo.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-format-patch.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-fsck-objects.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-fsck.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-fsmonitor--daemon.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-gc.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-get-tar-commit-id.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-grep.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-gui.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-hash-object.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-help.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-hook.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-http-backend.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-http-fetch.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-http-push.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-imap-send.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-index-pack.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-init-db.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-init.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-interpret-trailers.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-lfs.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-log.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-ls-files.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-ls-remote.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-ls-tree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-mailinfo.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-mailsplit.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-maintenance.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-merge-base.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-merge-file.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-merge-index.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-merge-ours.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-merge-recursive.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-merge-subtree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-merge-tree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-merge.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-mktag.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-mktree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-multi-pack-index.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-mv.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-name-rev.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-notes.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-pack-objects.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-pack-redundant.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-pack-refs.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-patch-id.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-prune-packed.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-prune.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-pull.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-push.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-range-diff.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-read-tree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-rebase.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-receive-pack.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-reflog.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-remote-ext.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-remote-fd.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-remote-ftp.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-remote-ftps.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-remote-http.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-remote-https.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-remote.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-repack.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-replace.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-rerere.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-reset.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-restore.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-rev-list.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-rev-parse.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-revert.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-rm.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-send-pack.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-sh-i18n--envsubst.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-shortlog.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-show-branch.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-show-index.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-show-ref.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-show.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-sparse-checkout.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-stage.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-stash.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-status.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-stripspace.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-submodule--helper.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-switch.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-symbolic-ref.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-tag.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-unpack-file.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-unpack-objects.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-update-index.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-update-ref.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-update-server-info.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-upload-archive.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-upload-pack.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-var.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-verify-commit.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-verify-pack.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-verify-tag.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-whatchanged.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-worktree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-wrapper.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git-write-tree.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "git.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "github.com": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "gitk.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "guava-31.0.1-jre.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "guava-31.1-jre.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "guava-32.0.1-jre.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "guava-32.1.2-jre.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "guava-33.3.1-jre.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "guava-33.5.0-jre.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "headless-git.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++auth.docker.com": {
+    "version": "99.0.0",
+    "source": "docker",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++discord.com": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++github.com": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++steamrip.com": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++store.steampowered.com": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++support.discord.com": {
+    "version": "1.0.9226",
+    "source": "discord",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++www.virustotal.com": {
+    "version": "1.97.1",
+    "source": "rust",
+    "derniere_verification": "2026-07-30"
+  },
+  "influxdb-client-java-1.8.0.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "io_github_douira_glsl-transformer-2.0.1-59635e6fe1dc6df.jar": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "io_github_douira_glsl-transformer-2.0.1-f38058f2330ca93a.jar": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "ipython.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "ipython3.exe": {
+    "version": "3.14.6",
+    "source": "python",
+    "derniere_verification": "2026-07-30"
+  },
+  "java-rmi.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "java.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "java_uno.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "java_uno_accessbridge.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "java_websocket.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javac.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javacpl.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javadoc.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-base-17.0.0.1-win.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-base-17.0.0.1.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-controls-17.0.0.1-win.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-controls-17.0.0.1.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-graphics-17.0.0.1-win.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-graphics-17.0.0.1.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-media-17.0.0.1-win.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-media-17.0.0.1.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-swing-17.0.0.1-win.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-swing-17.0.0.1.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-swt.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-web-17.0.0.1-win.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javafx-web-17.0.0.1.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javap.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javassist-3.12.1.ga.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javaw.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javaws.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javaws.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javax.activation-1.2.0.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javax.annotation-api-1.3.2.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javax.inject-1.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "javax.servlet_2.5.0.v200806031605.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "jre-8u471-windows-au.exe": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "jruby1453363875819382809generator.jar": {
+    "version": "3.4.10.1",
+    "source": "ruby",
+    "derniere_verification": "2026-07-30"
+  },
+  "jruby2915253014997109511parser.jar": {
+    "version": "3.4.10.1",
+    "source": "ruby",
+    "derniere_verification": "2026-07-30"
+  },
+  "jupyter-trust.exe": {
+    "version": "1.97.1",
+    "source": "rust",
+    "derniere_verification": "2026-07-30"
+  },
+  "kotlin-stdlib-jdk7-1.7.21.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "kotlin-stdlib-jdk7-2.1.0.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "kotlin-stdlib-jdk8-1.7.21.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "kotlin-stdlib-jdk8-2.1.0.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "libraryjavasound-20101123.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "libreoffice.jar": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-07-30"
+  },
+  "llvm-rust-demangle-fuzzer.exe": {
+    "version": "1.97.1",
+    "source": "rust",
+    "derniere_verification": "2026-07-30"
+  },
+  "lz4-java-1.8.0.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "lz4-java-1.8.1.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-artifact-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-builder-support-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-compat-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-core-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-embedder-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-model-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-model-builder-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-plugin-api-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-repository-metadata-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-api-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-connector-basic-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-impl-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-named-locks-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-provider-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-spi-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-transport-file-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-transport-http-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-transport-wagon-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-resolver-util-1.9.24.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-scm-api-1.4.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-scm-provider-svn-commons-1.4.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-scm-provider-svnexe-1.4.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-settings-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-settings-builder-3.9.11.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "maven-shared-utils-3.4.2.jar": {
+    "version": "3.9.16",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "mongodb-driver-core-4.5.0.jar": {
+    "version": "8.3.7",
+    "source": "mongodb",
+    "derniere_verification": "2026-07-30"
+  },
+  "mongodb-driver-sync-4.5.0.jar": {
+    "version": "8.3.7",
+    "source": "mongodb",
+    "derniere_verification": "2026-07-30"
+  },
+  "msteams.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "msteams_autostarter.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "msteamsupdate.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql-8.0.44-winx64.msi": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql-documents-8.0.44.msi": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql-examples-8.0.44.msi": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql-router-8.0.44-winx64.msi": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql-secret-store-windows-credential.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql-shell-8.0.44-windows-x86-64bit.msi": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql-workbench-community-8.0.44-winx64.msi": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_config_editor.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_migrate_keyring.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_secure_installation.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_ssl_rsa_setup.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_tzinfo_to_sql.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_upgrade.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqladmin.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlbinlog.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlcheck.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqld.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqldump.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlimport.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlpump.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlrouter.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlrouter_bootstrap.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlrouter_keyring.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlrouter_mrs_client.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlrouter_passwd.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlrouter_plugin_info.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlsh.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlshow.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysqlslap.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "nginx.exe": {
+    "version": "1.31.3",
+    "source": "nginx",
+    "derniere_verification": "2026-07-30"
+  },
+  "notepad++.exe": {
+    "version": "8.9.7",
+    "source": "github_releases",
+    "derniere_verification": "2026-07-30"
+  },
+  "npm: @anthropic-ai/claude-code": {
+    "version": "5.1.1",
+    "source": "npm_package",
+    "derniere_verification": "2026-07-30"
+  },
+  "npm: expo-cli": {
+    "version": "5.1.1",
+    "source": "npm_package",
+    "derniere_verification": "2026-07-30"
+  },
+  "npm: npm": {
+    "version": "5.1.1",
+    "source": "npm_package",
+    "derniere_verification": "2026-07-30"
+  },
+  "npm: opencode-ai": {
+    "version": "5.1.1",
+    "source": "npm_package",
+    "derniere_verification": "2026-07-30"
+  },
+  "npm: tailwindcss": {
+    "version": "5.1.1",
+    "source": "npm_package",
+    "derniere_verification": "2026-07-30"
+  },
+  "oh-my-git.exe": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "openssl.exe": {
+    "version": "4.0.1",
+    "source": "openssl",
+    "derniere_verification": "2026-07-30"
+  },
+  "org_javassist_javassist-3.29.2-ga-48a8948629ab9152.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "org_jetbrains_kotlin_kotlin-stdl-jdk7-2.3.0-e0d53d6513a87e04.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "org_jetbrains_kotlin_kotlin-stdl-jdk8-2.3.0-45aa968a98c22646.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "org_jetbrains_kotlinx_kotlinx-cojdk8-1.10.2-8ee2d40032486432.jar": {
+    "version": "26",
+    "source": "java",
+    "derniere_verification": "2026-07-30"
+  },
+  "php-cgi.exe": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "php-win.exe": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "php.exe": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "phpdbg.exe": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "pip.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pip.msi": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pip3.10.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pip3.12.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pip3.13.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pip3.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pipanel.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pipelist.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pipelist64.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "pipx.exe": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "postgresql-18.3-3-windows-x64 (1).exe": {
+    "version": "18.4.0",
+    "source": "postgresql",
+    "derniere_verification": "2026-07-30"
+  },
+  "postgresql-18.3-3-windows-x64.exe": {
+    "version": "18.4.0",
+    "source": "postgresql",
+    "derniere_verification": "2026-07-30"
+  },
+  "powershell.exe": {
+    "version": "5.1.14409.20180811",
+    "source": "powershell",
+    "derniere_verification": "2026-07-30"
+  },
+  "anydeskmsi.exe": {
+    "version": "9.7.15",
+    "source": "anydesk",
+    "derniere_verification": "2026-09-01"
+  },
+  "dell.digital.delivery.service.subagent.exe": {
+    "version": "2.55.0.5",
+    "source": "git",
+    "derniere_verification": "2026-09-01"
+  },
+  "dell.digital.delivery_64bit.msi": {
+    "version": "2.55.0.5",
+    "source": "git",
+    "derniere_verification": "2026-09-01"
+  },
+  "dell.trusteddevice.console.exe": {
+    "version": "1.98.0",
+    "source": "rust",
+    "derniere_verification": "2026-09-01"
+  },
+  "dell.trusteddevice.service.exe": {
+    "version": "1.98.0",
+    "source": "rust",
+    "derniere_verification": "2026-09-01"
+  },
+  "dolbylaboratories.dolbydigitalplusdecoderoem": {
+    "version": "2.55.0.5",
+    "source": "git",
+    "derniere_verification": "2026-09-01"
+  },
+  "filezilla_3.69.5_win64-setup.exe": {
+    "version": "3.71.1",
+    "source": "filezilla",
+    "derniere_verification": "2026-09-01"
+  },
+  "filezilla_3.69.6_win64-setup.exe": {
+    "version": "3.71.1",
+    "source": "filezilla",
+    "derniere_verification": "2026-09-01"
+  },
+  "microsoft asp.net core 8.0.27 - sôçª microsoft.dotnet.aspnetcore.8": {
+    "version": "10.0.11",
+    "source": "dotnet",
+    "derniere_verification": "2026-09-01"
+  },
+  "microsoft windows desktop runtimeôçª microsoft.dotnet.desktopruntime.6": {
+    "version": "10.0.11",
+    "source": "dotnet",
+    "derniere_verification": "2026-09-01"
+  },
+  "microsoft windows desktop runtimeôçª microsoft.dotnet.desktopruntime.8": {
+    "version": "10.0.11",
+    "source": "dotnet",
+    "derniere_verification": "2026-09-01"
+  },
+  "steamservicetmp.exe": {
+    "version": "3.10.91.91241028",
+    "source": "steam",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++h2-phpmyadmin.infomaniak.com": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++store.filezillapro.com": {
+    "version": "3.70.6",
+    "source": "filezilla",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++www.firefox.com": {
+    "version": "153.0.1",
+    "source": "mozilla_product",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++www.logitech.com": {
+    "version": "2.55.0.3",
+    "source": "git",
+    "derniere_verification": "2026-07-30"
+  },
+  "https+++www.rapidphpeditor.com": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql-workbench-community-8.0.43-winx64.msi": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_configurator.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "phpdoc.bat": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "rapidphp.exe": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "rapidphp2025(1).exe": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "rapidphp2025(2).exe": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "rapidphp2025.exe": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "git": {
+    "version": "2.55.0.5",
+    "source": "git",
+    "derniere_verification": "2026-09-01"
+  },
+  "filezilla_3.70.6_win64-setup.exe": {
+    "version": "3.71.1",
+    "source": "filezilla",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficebaseportable.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficecalcportable.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficedrawportable.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficeimpressportable.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficemathportable.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficeportable.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficeportablelegacywin7.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficeportableprevious.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficeportable_26.2.1_multilingualstandard.paf.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreofficewriterportable.exe": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "libreoffice_26.2.4_win_x86-64.msi": {
+    "version": "5.4.4.20180111",
+    "source": "libreoffice",
+    "derniere_verification": "2026-09-01"
+  },
+  "vscodeusersetup-x64-1.115.0.exe": {
+    "version": "1.131.0",
+    "source": "github_releases",
+    "derniere_verification": "2026-07-30"
+  },
+  "custom-fields.powershell.ps1": {
+    "version": "5.1.14409.20180811",
+    "source": "powershell",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_install_db.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_ldb.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_plugin.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_start.bat": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_stop.bat": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_upgrade_service.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "mysql_upgrade_wizard.exe": {
+    "version": "9.7.2",
+    "source": "oracle_mysql",
+    "derniere_verification": "2026-07-30"
+  },
+  "phpunit.bat": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "pip.bat": {
+    "version": "26.1.2",
+    "source": "pypi",
+    "derniere_verification": "2026-07-23"
+  },
+  "test_php.bat": {
+    "version": "8.5.9",
+    "source": "php",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-api.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-coyote.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-dbcp.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-i18n-es.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-i18n-fr.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-i18n-ja.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-i18n-ru.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-jdbc.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-juli.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat-util.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat7-websocket.jar": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat7.exe": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat7w.exe": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat_service_install.bat": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "tomcat_service_uninstall.bat": {
+    "version": "9.0.120",
+    "source": "apache",
+    "derniere_verification": "2026-07-30"
+  },
+  "composer-setup.exe": {
+    "version": "6.3.0",
+    "source": "composer",
+    "derniere_verification": "2026-09-01"
+  },
+  "filezilla_3.70.6_win64_sponsored2-setup.exe": {
+    "version": "3.71.1",
+    "source": "filezilla",
+    "derniere_verification": "2026-09-01"
+  }
+}

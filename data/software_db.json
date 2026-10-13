@@ -1,0 +1,5046 @@
+{
+  "chrome.exe": {
+    "nom_produit": "Google Chrome",
+    "editeur": "Google LLC",
+    "pays": "USA",
+    "site_officiel": "https://www.google.com/chrome",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "firefox.exe": {
+    "nom_produit": "Mozilla Firefox",
+    "editeur": "Mozilla Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.mozilla.org/firefox",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:mozilla:firefox:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "msedge.exe": {
+    "nom_produit": "Microsoft Edge",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/edge",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:microsoft:edge:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "opera.exe": {
+    "nom_produit": "Opera Browser",
+    "editeur": "Opera Software",
+    "pays": "Norvège",
+    "site_officiel": "https://www.opera.com",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:opera:opera_browser:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "brave.exe": {
+    "nom_produit": "Brave Browser",
+    "editeur": "Brave Software",
+    "pays": "USA",
+    "site_officiel": "https://brave.com",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "vlc.exe": {
+    "nom_produit": "VLC Media Player",
+    "editeur": "VideoLAN",
+    "pays": "France",
+    "site_officiel": "https://www.videolan.org/vlc",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:videolan:vlc_media_player:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "7z.exe": {
+    "nom_produit": "7-Zip",
+    "editeur": "Igor Pavlov",
+    "pays": "Russie",
+    "site_officiel": "https://www.7-zip.org",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:7-zip:7-zip:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "7zfm.exe": {
+    "nom_produit": "7-Zip File Manager",
+    "editeur": "Igor Pavlov",
+    "pays": "Russie",
+    "site_officiel": "https://www.7-zip.org",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "cpe:2.3:a:7-zip:7-zip:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "winrar.exe": {
+    "nom_produit": "WinRAR",
+    "editeur": "RARLAB",
+    "pays": "Bulgarie",
+    "site_officiel": "https://www.win-rar.com",
+    "type_licence": "Payant",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "cpe:2.3:a:rarlab:winrar:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "notepad.exe": {
+    "nom_produit": "Notepad",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "notepad++.exe": {
+    "nom_produit": "Notepad++",
+    "editeur": "Don Ho",
+    "pays": "France",
+    "site_officiel": "https://notepad-plus-plus.org",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "cpe:2.3:a:notepad-plus-plus:notepad++:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "putty.exe": {
+    "nom_produit": "PuTTY",
+    "editeur": "Simon Tatham",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://www.putty.org",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "cpe:2.3:a:putty:putty:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "winscp.exe": {
+    "nom_produit": "WinSCP",
+    "editeur": "Martin Prikryl",
+    "pays": "République Tchèque",
+    "site_officiel": "https://winscp.net",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "filezilla.exe": {
+    "nom_produit": "FileZilla",
+    "editeur": "Tim Kosse",
+    "pays": "Allemagne",
+    "site_officiel": "https://filezilla-project.org",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:filezilla_project:filezilla:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "everything.exe": {
+    "nom_produit": "Everything",
+    "editeur": "voidtools",
+    "pays": "Australie",
+    "site_officiel": "https://www.voidtools.com",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "spotify.exe": {
+    "nom_produit": "Spotify",
+    "editeur": "Spotify AB",
+    "pays": "Suède",
+    "site_officiel": "https://www.spotify.com",
+    "type_licence": "Freemium",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "discord.exe": {
+    "nom_produit": "Discord",
+    "editeur": "Discord Inc.",
+    "pays": "USA",
+    "site_officiel": "https://discord.com",
+    "type_licence": "Gratuit",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "teams.exe": {
+    "nom_produit": "Microsoft Teams",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/teams",
+    "type_licence": "Gratuit (inclus Office 365)",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:microsoft:teams:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "zoom.exe": {
+    "nom_produit": "Zoom",
+    "editeur": "Zoom Video Communications",
+    "pays": "USA",
+    "site_officiel": "https://zoom.us",
+    "type_licence": "Freemium",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:zoom:zoom:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "slack.exe": {
+    "nom_produit": "Slack",
+    "editeur": "Salesforce",
+    "pays": "USA",
+    "site_officiel": "https://slack.com",
+    "type_licence": "Freemium",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "code.exe": {
+    "nom_produit": "Visual Studio Code",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://code.visualstudio.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:microsoft:visual_studio_code:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "git.exe": {
+    "nom_produit": "Git",
+    "editeur": "The Git Development Community",
+    "pays": "International",
+    "site_officiel": "https://git-scm.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:git-scm:git:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "python.exe": {
+    "nom_produit": "Python",
+    "editeur": "Python Software Foundation",
+    "pays": "USA",
+    "site_officiel": "https://www.python.org",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "java.exe": {
+    "nom_produit": "Java",
+    "editeur": "Oracle Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.java.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:oracle:jre:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "javaw.exe": {
+    "nom_produit": "Java Runtime",
+    "editeur": "Oracle Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.java.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:oracle:jre:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "nmap.exe": {
+    "nom_produit": "Nmap",
+    "editeur": "Nmap Project",
+    "pays": "USA",
+    "site_officiel": "https://nmap.org",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité offensive",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:nmap:nmap:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "wireshark.exe": {
+    "nom_produit": "Wireshark",
+    "editeur": "The Wireshark Team",
+    "pays": "International",
+    "site_officiel": "https://www.wireshark.org",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité offensive",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:wireshark:wireshark:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "steam.exe": {
+    "nom_produit": "Steam",
+    "editeur": "Valve Corporation",
+    "pays": "USA",
+    "site_officiel": "https://store.steampowered.com",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "epicgameslauncher.exe": {
+    "nom_produit": "Epic Games Launcher",
+    "editeur": "Epic Games",
+    "pays": "USA",
+    "site_officiel": "https://www.epicgames.com",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "gtav.exe": {
+    "nom_produit": "Grand Theft Auto V",
+    "editeur": "Rockstar Games",
+    "pays": "USA",
+    "site_officiel": "https://www.rockstargames.com/gta-v",
+    "type_licence": "Payant",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Steam",
+      "Rockstar Games Launcher",
+      "Epic Games"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "gta5.exe": {
+    "nom_produit": "Grand Theft Auto V",
+    "editeur": "Rockstar Games",
+    "pays": "USA",
+    "site_officiel": "https://www.rockstargames.com/gta-v",
+    "type_licence": "Payant",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Steam",
+      "Rockstar Games Launcher",
+      "Epic Games"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "acrobat.exe": {
+    "nom_produit": "Adobe Acrobat",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://acrobat.adobe.com",
+    "type_licence": "Payant",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "cpe:2.3:a:adobe:acrobat:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "acrord32.exe": {
+    "nom_produit": "Adobe Acrobat Reader",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://get.adobe.com/reader",
+    "type_licence": "Gratuit",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "cpe:2.3:a:adobe:acrobat_reader:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "photoshop.exe": {
+    "nom_produit": "Adobe Photoshop",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.adobe.com/photoshop",
+    "type_licence": "Payant",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "cpe:2.3:a:adobe:photoshop:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "obs64.exe": {
+    "nom_produit": "OBS Studio",
+    "editeur": "OBS Project",
+    "pays": "International",
+    "site_officiel": "https://obsproject.com",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "obs32.exe": {
+    "nom_produit": "OBS Studio",
+    "editeur": "OBS Project",
+    "pays": "International",
+    "site_officiel": "https://obsproject.com",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "nordvpn.exe": {
+    "nom_produit": "NordVPN",
+    "editeur": "Nord Security",
+    "pays": "Lituanie",
+    "site_officiel": "https://nordvpn.com",
+    "type_licence": "Payant",
+    "categorie": "VPN non corp",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "protonvpn.exe": {
+    "nom_produit": "ProtonVPN",
+    "editeur": "Proton AG",
+    "pays": "Suisse",
+    "site_officiel": "https://protonvpn.com",
+    "type_licence": "Freemium",
+    "categorie": "VPN non corp",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "expressvpn.exe": {
+    "nom_produit": "ExpressVPN",
+    "editeur": "ExpressVPN",
+    "pays": "Îles Vierges Britanniques",
+    "site_officiel": "https://www.expressvpn.com",
+    "type_licence": "Payant",
+    "categorie": "VPN non corp",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "mullvad.exe": {
+    "nom_produit": "Mullvad VPN",
+    "editeur": "Mullvad VPN AB",
+    "pays": "Suède",
+    "site_officiel": "https://mullvad.net",
+    "type_licence": "Payant",
+    "categorie": "VPN non corp",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "cyberghost.exe": {
+    "nom_produit": "CyberGhost VPN",
+    "editeur": "CyberGhost SRL",
+    "pays": "Roumanie",
+    "site_officiel": "https://www.cyberghostvpn.com",
+    "type_licence": "Payant",
+    "categorie": "VPN non corp",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "surfshark.exe": {
+    "nom_produit": "Surfshark VPN",
+    "editeur": "Surfshark",
+    "pays": "Pays-Bas",
+    "site_officiel": "https://surfshark.com",
+    "type_licence": "Payant",
+    "categorie": "VPN non corp",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "gpuz.exe": {
+    "nom_produit": "GPU-Z",
+    "editeur": "TechPowerUp",
+    "pays": "International",
+    "site_officiel": "https://www.techpowerup.com/gpuz",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "cpuz.exe": {
+    "nom_produit": "CPU-Z",
+    "editeur": "CPUID",
+    "pays": "France",
+    "site_officiel": "https://www.cpuid.com/softwares/cpu-z.html",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "hwinfo.exe": {
+    "nom_produit": "HWiNFO",
+    "editeur": "Martin Malik",
+    "pays": "République Tchèque",
+    "site_officiel": "https://www.hwinfo.com",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "hwinfo64.exe": {
+    "nom_produit": "HWiNFO64",
+    "editeur": "Martin Malik",
+    "pays": "République Tchèque",
+    "site_officiel": "https://www.hwinfo.com",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "speccy.exe": {
+    "nom_produit": "Speccy",
+    "editeur": "Piriform",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://www.ccleaner.com/speccy",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "msiafterburner.exe": {
+    "nom_produit": "MSI Afterburner",
+    "editeur": "MSI",
+    "pays": "Taïwan",
+    "site_officiel": "https://www.msi.com/Landing/afterburner",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "adb.exe": {
+    "nom_produit": "Android Debug Bridge",
+    "editeur": "Google LLC",
+    "pays": "USA",
+    "site_officiel": "https://developer.android.com/tools/adb",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "ffmpeg.exe": {
+    "nom_produit": "FFmpeg",
+    "editeur": "FFmpeg Community",
+    "pays": "International",
+    "site_officiel": "https://ffmpeg.org",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "handbrake.exe": {
+    "nom_produit": "HandBrake",
+    "editeur": "HandBrake Team",
+    "pays": "International",
+    "site_officiel": "https://handbrake.fr",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "avast.exe": {
+    "nom_produit": "Avast Antivirus",
+    "editeur": "Avast Software",
+    "pays": "République Tchèque",
+    "site_officiel": "https://www.avast.com",
+    "type_licence": "Freemium",
+    "categorie": "Antivirus",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "avg.exe": {
+    "nom_produit": "AVG Antivirus",
+    "editeur": "AVG Technologies",
+    "pays": "République Tchèque",
+    "site_officiel": "https://www.avg.com",
+    "type_licence": "Freemium",
+    "categorie": "Antivirus",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "malwarebytes.exe": {
+    "nom_produit": "Malwarebytes",
+    "editeur": "Malwarebytes Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.malwarebytes.com",
+    "type_licence": "Payant",
+    "categorie": "Antivirus",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "mbam.exe": {
+    "nom_produit": "Malwarebytes",
+    "editeur": "Malwarebytes Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.malwarebytes.com",
+    "type_licence": "Payant",
+    "categorie": "Antivirus",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "mimikatz.exe": {
+    "nom_produit": "Mimikatz",
+    "editeur": "Benjamin Delpy",
+    "pays": "France",
+    "site_officiel": "https://github.com/gentilkiwi/mimikatz",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité offensive",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "hashcat.exe": {
+    "nom_produit": "Hashcat",
+    "editeur": "hashcat",
+    "pays": "International",
+    "site_officiel": "https://hashcat.net",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité offensive",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "burpsuite.exe": {
+    "nom_produit": "Burp Suite",
+    "editeur": "PortSwigger",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://portswigger.net/burp",
+    "type_licence": "Freemium",
+    "categorie": "Sécurité offensive",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "nikto.exe": {
+    "nom_produit": "Nikto",
+    "editeur": "Chris Sullo",
+    "pays": "USA",
+    "site_officiel": "https://github.com/sullo/nikto",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité offensive",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "gimp.exe": {
+    "nom_produit": "GIMP",
+    "editeur": "GIMP Team",
+    "pays": "International",
+    "site_officiel": "https://www.gimp.org",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:gimp:gimp:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "blender.exe": {
+    "nom_produit": "Blender",
+    "editeur": "Blender Foundation",
+    "pays": "Pays-Bas",
+    "site_officiel": "https://www.blender.org",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:blender:blender:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "krita.exe": {
+    "nom_produit": "Krita",
+    "editeur": "Krita Foundation",
+    "pays": "Pays-Bas",
+    "site_officiel": "https://krita.org",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "audacity.exe": {
+    "nom_produit": "Audacity",
+    "editeur": "Audacity Team",
+    "pays": "International",
+    "site_officiel": "https://www.audacityteam.org",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "ccleaner.exe": {
+    "nom_produit": "CCleaner",
+    "editeur": "Piriform",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://www.ccleaner.com",
+    "type_licence": "Freemium",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "defraggler.exe": {
+    "nom_produit": "Defraggler",
+    "editeur": "Piriform",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://www.ccleaner.com/defraggler",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "recuva.exe": {
+    "nom_produit": "Recuva",
+    "editeur": "Piriform",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://www.ccleaner.com/recuva",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "libreoffice.exe": {
+    "nom_produit": "LibreOffice",
+    "editeur": "The Document Foundation",
+    "pays": "Allemagne",
+    "site_officiel": "https://www.libreoffice.org",
+    "type_licence": "Gratuit",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "soffice.exe": {
+    "nom_produit": "LibreOffice",
+    "editeur": "The Document Foundation",
+    "pays": "Allemagne",
+    "site_officiel": "https://www.libreoffice.org",
+    "type_licence": "Gratuit",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:libreoffice:libreoffice:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "openoffice.exe": {
+    "nom_produit": "Apache OpenOffice",
+    "editeur": "Apache Software Foundation",
+    "pays": "USA",
+    "site_officiel": "https://www.openoffice.org",
+    "type_licence": "Gratuit",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "battlenet.exe": {
+    "nom_produit": "Battle.net",
+    "editeur": "Blizzard Entertainment",
+    "pays": "USA",
+    "site_officiel": "https://www.blizzard.com",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "uplay.exe": {
+    "nom_produit": "Ubisoft Connect",
+    "editeur": "Ubisoft",
+    "pays": "France",
+    "site_officiel": "https://ubisoftconnect.com",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "origin.exe": {
+    "nom_produit": "EA App",
+    "editeur": "Electronic Arts",
+    "pays": "USA",
+    "site_officiel": "https://www.ea.com/ea-app",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "epicgames.exe": {
+    "nom_produit": "Epic Games Launcher",
+    "editeur": "Epic Games",
+    "pays": "USA",
+    "site_officiel": "https://www.epicgames.com",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "eac_launcher.exe": {
+    "nom_produit": "Epic Games Launcher",
+    "editeur": "Epic Games",
+    "pays": "USA",
+    "site_officiel": "https://www.epicgames.com",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "fiddler.exe": {
+    "nom_produit": "Fiddler",
+    "editeur": "Telerik",
+    "pays": "Bulgarie",
+    "site_officiel": "https://www.telerik.com/fiddler",
+    "type_licence": "Freemium",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "postman.exe": {
+    "nom_produit": "Postman",
+    "editeur": "Postman Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.postman.com",
+    "type_licence": "Freemium",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "insomnia.exe": {
+    "nom_produit": "Insomnia",
+    "editeur": "Kong Inc.",
+    "pays": "USA",
+    "site_officiel": "https://insomnia.rest",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "terraform.exe": {
+    "nom_produit": "Terraform",
+    "editeur": "HashiCorp",
+    "pays": "USA",
+    "site_officiel": "https://www.terraform.io",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "packer.exe": {
+    "nom_produit": "Packer",
+    "editeur": "HashiCorp",
+    "pays": "USA",
+    "site_officiel": "https://www.packer.io",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "docker.exe": {
+    "nom_produit": "Docker CLI",
+    "editeur": "Docker Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.docker.com",
+    "type_licence": "Freemium",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:docker:docker:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "kubectl.exe": {
+    "nom_produit": "kubectl",
+    "editeur": "Cloud Native Computing Foundation",
+    "pays": "USA",
+    "site_officiel": "https://kubernetes.io",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "minikube.exe": {
+    "nom_produit": "Minikube",
+    "editeur": "Cloud Native Computing Foundation",
+    "pays": "USA",
+    "site_officiel": "https://minikube.sigs.k8s.io",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "helm.exe": {
+    "nom_produit": "Helm",
+    "editeur": "Cloud Native Computing Foundation",
+    "pays": "USA",
+    "site_officiel": "https://helm.sh",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "node.exe": {
+    "nom_produit": "Node.js",
+    "editeur": "OpenJS Foundation",
+    "pays": "USA",
+    "site_officiel": "https://nodejs.org",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "npm.exe": {
+    "nom_produit": "npm",
+    "editeur": "npm Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.npmjs.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "yarn.exe": {
+    "nom_produit": "Yarn",
+    "editeur": "Yarn Contributors",
+    "pays": "International",
+    "site_officiel": "https://yarnpkg.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Non référencé",
+    "eol": null
+  },
+  "dotnet.exe": {
+    "nom_produit": ".NET SDK",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://dotnet.microsoft.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "go.exe": {
+    "nom_produit": "Go",
+    "editeur": "Google LLC",
+    "pays": "USA",
+    "site_officiel": "https://go.dev",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "cpe:2.3:a:golang:go:*:*:*:*:*:*:*:*",
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "msiexec.exe": {
+    "nom_produit": "Windows Installer",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "rundll32.exe": {
+    "nom_produit": "Windows Rundll32",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "taskmgr.exe": {
+    "nom_produit": "Gestionnaire de tâches",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "regedit.exe": {
+    "nom_produit": "Éditeur du Registre",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "cmd.exe": {
+    "nom_produit": "Invite de commandes",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "powershell.exe": {
+    "nom_produit": "PowerShell",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://microsoft.com/powershell",
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "xcopy.exe": {
+    "nom_produit": "XCOPY",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "robocopy.exe": {
+    "nom_produit": "Robocopy",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "procexp.exe": {
+    "nom_produit": "Process Explorer",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/process-explorer",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "procexp64.exe": {
+    "nom_produit": "Process Explorer",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/process-explorer",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "autoruns.exe": {
+    "nom_produit": "Autoruns",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/autoruns",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "autoruns64.exe": {
+    "nom_produit": "Autoruns",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/autoruns",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "tcpview.exe": {
+    "nom_produit": "TCPView",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/tcpview",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "procmon.exe": {
+    "nom_produit": "Process Monitor",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/procmon",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "procmon64.exe": {
+    "nom_produit": "Process Monitor",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/procmon",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "psexec.exe": {
+    "nom_produit": "PsExec",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/psexec",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "psexec64.exe": {
+    "nom_produit": "PsExec",
+    "editeur": "Microsoft Corporation (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/psexec",
+    "type_licence": "Gratuit",
+    "categorie": "Outil système",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "explorer.exe": {
+    "nom_produit": "Explorateur Windows",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "wmplayer.exe": {
+    "nom_produit": "Windows Media Player",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": null,
+    "type_licence": "Intégré Windows",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows"
+    ],
+    "anssi_statut": "Referencé",
+    "eol": null
+  },
+  "vivaldi.exe": {
+    "nom_produit": "Vivaldi Browser",
+    "editeur": "Vivaldi Technologies",
+    "pays": "Norway",
+    "site_officiel": "https://vivaldi.com",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "tor.exe": {
+    "nom_produit": "Tor Browser",
+    "editeur": "The Tor Project",
+    "pays": "USA",
+    "site_officiel": "https://www.torproject.org",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "iexplore.exe": {
+    "nom_produit": "Internet Explorer",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "winword.exe": {
+    "nom_produit": "Microsoft Word",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/office",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "excel.exe": {
+    "nom_produit": "Microsoft Excel",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/office",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "powerpnt.exe": {
+    "nom_produit": "Microsoft PowerPoint",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/office",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "outlook.exe": {
+    "nom_produit": "Microsoft Outlook",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/office",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "msaccess.exe": {
+    "nom_produit": "Microsoft Access",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/office",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mspub.exe": {
+    "nom_produit": "Microsoft Publisher",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/office",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "onenote.exe": {
+    "nom_produit": "Microsoft OneNote",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.onenote.com",
+    "type_licence": "Gratuit",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "visio.exe": {
+    "nom_produit": "Microsoft Visio",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/visio",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "winproj.exe": {
+    "nom_produit": "Microsoft Project",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/project",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "swriter.exe": {
+    "nom_produit": "LibreOffice Writer",
+    "editeur": "The Document Foundation",
+    "pays": "Germany",
+    "site_officiel": "https://www.libreoffice.org",
+    "type_licence": "Open Source",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "scalc.exe": {
+    "nom_produit": "LibreOffice Calc",
+    "editeur": "The Document Foundation",
+    "pays": "Germany",
+    "site_officiel": "https://www.libreoffice.org",
+    "type_licence": "Open Source",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "simpress.exe": {
+    "nom_produit": "LibreOffice Impress",
+    "editeur": "The Document Foundation",
+    "pays": "Germany",
+    "site_officiel": "https://www.libreoffice.org",
+    "type_licence": "Open Source",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "skype.exe": {
+    "nom_produit": "Skype",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.skype.com",
+    "type_licence": "Gratuit",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "telegram.exe": {
+    "nom_produit": "Telegram Desktop",
+    "editeur": "Telegram FZ-LLC",
+    "pays": "UAE",
+    "site_officiel": "https://telegram.org",
+    "type_licence": "Gratuit",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "signal.exe": {
+    "nom_produit": "Signal Desktop",
+    "editeur": "Signal Foundation",
+    "pays": "USA",
+    "site_officiel": "https://signal.org",
+    "type_licence": "Gratuit",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "whatsapp.exe": {
+    "nom_produit": "WhatsApp Desktop",
+    "editeur": "Meta Platforms",
+    "pays": "USA",
+    "site_officiel": "https://www.whatsapp.com",
+    "type_licence": "Gratuit",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "thunderbird.exe": {
+    "nom_produit": "Mozilla Thunderbird",
+    "editeur": "Mozilla Foundation",
+    "pays": "USA",
+    "site_officiel": "https://www.thunderbird.net",
+    "type_licence": "Open Source",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "webex.exe": {
+    "nom_produit": "Cisco Webex Meetings",
+    "editeur": "Cisco Systems",
+    "pays": "USA",
+    "site_officiel": "https://www.webex.com",
+    "type_licence": "Commercial",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "devenv.exe": {
+    "nom_produit": "Visual Studio 2022",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://visualstudio.microsoft.com",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "idea64.exe": {
+    "nom_produit": "IntelliJ IDEA Ultimate",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/idea",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "pycharm64.exe": {
+    "nom_produit": "PyCharm Professional",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/pycharm",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "webstorm64.exe": {
+    "nom_produit": "WebStorm",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/webstorm",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "datagrip64.exe": {
+    "nom_produit": "DataGrip",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/datagrip",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "clion64.exe": {
+    "nom_produit": "CLion",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/clion",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "rider64.exe": {
+    "nom_produit": "JetBrains Rider",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/rider",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "goland64.exe": {
+    "nom_produit": "GoLand",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/goland",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "phpstorm64.exe": {
+    "nom_produit": "PhpStorm",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/phpstorm",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "rubymine64.exe": {
+    "nom_produit": "RubyMine",
+    "editeur": "JetBrains",
+    "pays": "Czechia",
+    "site_officiel": "https://www.jetbrains.com/rubymine",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "eclipse.exe": {
+    "nom_produit": "Eclipse IDE",
+    "editeur": "Eclipse Foundation",
+    "pays": "Canada",
+    "site_officiel": "https://eclipseide.org",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sublime_text.exe": {
+    "nom_produit": "Sublime Text",
+    "editeur": "Sublime HQ",
+    "pays": "Australia",
+    "site_officiel": "https://www.sublimetext.com",
+    "type_licence": "Commercial",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "atom.exe": {
+    "nom_produit": "Atom Editor",
+    "editeur": "GitHub (Microsoft)",
+    "pays": "USA",
+    "site_officiel": "https://atom.io",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "javac.exe": {
+    "nom_produit": "Java Development Kit",
+    "editeur": "Oracle Corporation",
+    "pays": "USA",
+    "site_officiel": "https://jdk.java.net",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "git-bash.exe": {
+    "nom_produit": "Git Bash",
+    "editeur": "Git for Windows",
+    "pays": "USA",
+    "site_officiel": "https://git-scm.com",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "cmake.exe": {
+    "nom_produit": "CMake",
+    "editeur": "Kitware",
+    "pays": "USA",
+    "site_officiel": "https://cmake.org",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "msbuild.exe": {
+    "nom_produit": "MSBuild",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://github.com/dotnet/msbuild",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "gradle.exe": {
+    "nom_produit": "Gradle",
+    "editeur": "Gradle Inc.",
+    "pays": "USA",
+    "site_officiel": "https://gradle.org",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "ssms.exe": {
+    "nom_produit": "SQL Server Management Studio",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://docs.microsoft.com/sql/ssms",
+    "type_licence": "Gratuit",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mysql.exe": {
+    "nom_produit": "MySQL CLI",
+    "editeur": "Oracle Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.mysql.com",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mysqld.exe": {
+    "nom_produit": "MySQL Server",
+    "editeur": "Oracle Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.mysql.com",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sqlservr.exe": {
+    "nom_produit": "SQL Server",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/sql-server",
+    "type_licence": "Commercial",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "psql.exe": {
+    "nom_produit": "PostgreSQL CLI",
+    "editeur": "PostgreSQL Global Development Group",
+    "pays": "USA",
+    "site_officiel": "https://www.postgresql.org",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "postgres.exe": {
+    "nom_produit": "PostgreSQL Server",
+    "editeur": "PostgreSQL Global Development Group",
+    "pays": "USA",
+    "site_officiel": "https://www.postgresql.org",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "dbeaver.exe": {
+    "nom_produit": "DBeaver",
+    "editeur": "DBeaver Corp",
+    "pays": "",
+    "site_officiel": "https://dbeaver.io",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "heidisql.exe": {
+    "nom_produit": "HeidiSQL",
+    "editeur": "HeidiSQL",
+    "pays": "",
+    "site_officiel": "https://www.heidisql.com",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "pgadmin.exe": {
+    "nom_produit": "pgAdmin",
+    "editeur": "pgAdmin Development Team",
+    "pays": "",
+    "site_officiel": "https://www.pgadmin.org",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mongod.exe": {
+    "nom_produit": "MongoDB Server",
+    "editeur": "MongoDB Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.mongodb.com",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mongo.exe": {
+    "nom_produit": "MongoDB Shell",
+    "editeur": "MongoDB Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.mongodb.com",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sqlite3.exe": {
+    "nom_produit": "SQLite3 CLI",
+    "editeur": "SQLite Consortium",
+    "pays": "USA",
+    "site_officiel": "https://www.sqlite.org",
+    "type_licence": "Public Domain",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "redis-server.exe": {
+    "nom_produit": "Redis Server",
+    "editeur": "Redis Ltd.",
+    "pays": "USA",
+    "site_officiel": "https://redis.io",
+    "type_licence": "Open Source",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "vmware.exe": {
+    "nom_produit": "VMware Workstation",
+    "editeur": "VMware (Broadcom)",
+    "pays": "USA",
+    "site_officiel": "https://www.vmware.com/products/workstation-pro",
+    "type_licence": "Commercial",
+    "categorie": "Virtualisation",
+    "plateforme": [
+      "Windows",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "vmplayer.exe": {
+    "nom_produit": "VMware Workstation Player",
+    "editeur": "VMware (Broadcom)",
+    "pays": "USA",
+    "site_officiel": "https://www.vmware.com/products/workstation-player",
+    "type_licence": "Gratuit",
+    "categorie": "Virtualisation",
+    "plateforme": [
+      "Windows",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "virtualbox.exe": {
+    "nom_produit": "Oracle VM VirtualBox",
+    "editeur": "Oracle Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.virtualbox.org",
+    "type_licence": "Open Source",
+    "categorie": "Virtualisation",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "docker-compose.exe": {
+    "nom_produit": "Docker Compose",
+    "editeur": "Docker Inc.",
+    "pays": "USA",
+    "site_officiel": "https://docs.docker.com/compose",
+    "type_licence": "Open Source",
+    "categorie": "Virtualisation",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "docker-desktop.exe": {
+    "nom_produit": "Docker Desktop",
+    "editeur": "Docker Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.docker.com/products/docker-desktop",
+    "type_licence": "Gratuit",
+    "categorie": "Virtualisation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "vagrant.exe": {
+    "nom_produit": "Vagrant",
+    "editeur": "HashiCorp",
+    "pays": "USA",
+    "site_officiel": "https://www.vagrantup.com",
+    "type_licence": "Open Source",
+    "categorie": "Virtualisation",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "nessus.exe": {
+    "nom_produit": "Nessus",
+    "editeur": "Tenable",
+    "pays": "USA",
+    "site_officiel": "https://www.tenable.com/products/nessus",
+    "type_licence": "Commercial",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "keepass.exe": {
+    "nom_produit": "KeePass Password Safe",
+    "editeur": "Dominik Reichl",
+    "pays": "Germany",
+    "site_officiel": "https://keepass.info",
+    "type_licence": "Open Source",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "procdump.exe": {
+    "nom_produit": "ProcDump",
+    "editeur": "Microsoft (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/downloads/procdump",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "handle.exe": {
+    "nom_produit": "Handle",
+    "editeur": "Microsoft (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/downloads/handle",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sigcheck.exe": {
+    "nom_produit": "SigCheck",
+    "editeur": "Microsoft (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/downloads/sigcheck",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "strings.exe": {
+    "nom_produit": "Strings",
+    "editeur": "Microsoft (Sysinternals)",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/sysinternals/downloads/strings",
+    "type_licence": "Gratuit",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "aws.exe": {
+    "nom_produit": "AWS CLI",
+    "editeur": "Amazon Web Services",
+    "pays": "USA",
+    "site_officiel": "https://aws.amazon.com/cli",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "az.exe": {
+    "nom_produit": "Azure CLI",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://docs.microsoft.com/cli/azure",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "gcloud.exe": {
+    "nom_produit": "Google Cloud SDK CLI",
+    "editeur": "Google LLC",
+    "pays": "USA",
+    "site_officiel": "https://cloud.google.com/sdk",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "vault.exe": {
+    "nom_produit": "Vault",
+    "editeur": "HashiCorp",
+    "pays": "USA",
+    "site_officiel": "https://www.vaultproject.io",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "consul.exe": {
+    "nom_produit": "Consul",
+    "editeur": "HashiCorp",
+    "pays": "USA",
+    "site_officiel": "https://www.consul.io",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "trivy.exe": {
+    "nom_produit": "Trivy",
+    "editeur": "Aqua Security",
+    "pays": "Israel",
+    "site_officiel": "https://trivy.dev",
+    "type_licence": "Open Source",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "gimp-2.10.exe": {
+    "nom_produit": "GIMP",
+    "editeur": "GIMP Team",
+    "pays": "USA",
+    "site_officiel": "https://www.gimp.org",
+    "type_licence": "Open Source",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "inkscape.exe": {
+    "nom_produit": "Inkscape",
+    "editeur": "Inkscape Project",
+    "pays": "USA",
+    "site_officiel": "https://inkscape.org",
+    "type_licence": "Open Source",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mpv.exe": {
+    "nom_produit": "mpv Media Player",
+    "editeur": "mpv Project",
+    "pays": "",
+    "site_officiel": "https://mpv.io",
+    "type_licence": "Open Source",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "foobar2000.exe": {
+    "nom_produit": "foobar2000",
+    "editeur": "Peter Pawlowski",
+    "pays": "",
+    "site_officiel": "https://www.foobar2000.org",
+    "type_licence": "Gratuit",
+    "categorie": "Multimédia",
+    "plateforme": [
+      "Windows",
+      "Android"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "winzip.exe": {
+    "nom_produit": "WinZip",
+    "editeur": "Corel Corporation",
+    "pays": "Canada",
+    "site_officiel": "https://www.winzip.com",
+    "type_licence": "Commercial",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "peazip.exe": {
+    "nom_produit": "PeaZip",
+    "editeur": "Giorgio Tani",
+    "pays": "Italy",
+    "site_officiel": "https://peazip.github.io",
+    "type_licence": "Open Source",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sumatrapdf.exe": {
+    "nom_produit": "SumatraPDF",
+    "editeur": "SumatraPDF Project",
+    "pays": "",
+    "site_officiel": "https://www.sumatrapdfreader.org",
+    "type_licence": "Open Source",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "foxitpdfreader.exe": {
+    "nom_produit": "Foxit PDF Reader",
+    "editeur": "Foxit Software",
+    "pays": "USA",
+    "site_officiel": "https://www.foxit.com/pdf-reader",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "cpu-z.exe": {
+    "nom_produit": "CPU-Z",
+    "editeur": "CPUID",
+    "pays": "France",
+    "site_officiel": "https://www.cpuid.com/softwares/cpu-z.html",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "gpu-z.exe": {
+    "nom_produit": "GPU-Z",
+    "editeur": "TechPowerUp",
+    "pays": "",
+    "site_officiel": "https://www.techpowerup.com/gpuz",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "greenshot.exe": {
+    "nom_produit": "Greenshot",
+    "editeur": "Greenshot Project",
+    "pays": "",
+    "site_officiel": "https://getgreenshot.org",
+    "type_licence": "Open Source",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sharex.exe": {
+    "nom_produit": "ShareX",
+    "editeur": "ShareX Team",
+    "pays": "",
+    "site_officiel": "https://getsharex.com",
+    "type_licence": "Open Source",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "powertoys.exe": {
+    "nom_produit": "Microsoft PowerToys",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://github.com/microsoft/PowerToys",
+    "type_licence": "Open Source",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "illustrator.exe": {
+    "nom_produit": "Adobe Illustrator",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.adobe.com/products/illustrator",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "indesign.exe": {
+    "nom_produit": "Adobe InDesign",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.adobe.com/products/indesign",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "premiere.exe": {
+    "nom_produit": "Adobe Premiere Pro",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.adobe.com/products/premiere",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "afterfx.exe": {
+    "nom_produit": "Adobe After Effects",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.adobe.com/products/aftereffects",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "audition.exe": {
+    "nom_produit": "Adobe Audition",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.adobe.com/products/audition",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "lightroom.exe": {
+    "nom_produit": "Adobe Lightroom Classic",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.adobe.com/products/photoshop-lightroom",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "acroread.exe": {
+    "nom_produit": "Adobe Acrobat Reader",
+    "editeur": "Adobe Inc.",
+    "pays": "USA",
+    "site_officiel": "https://get.adobe.com/reader",
+    "type_licence": "Gratuit",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sapgui.exe": {
+    "nom_produit": "SAP GUI for Windows",
+    "editeur": "SAP SE",
+    "pays": "Germany",
+    "site_officiel": "https://www.sap.com",
+    "type_licence": "Commercial",
+    "categorie": "Gestion",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "saplogon.exe": {
+    "nom_produit": "SAP Logon",
+    "editeur": "SAP SE",
+    "pays": "Germany",
+    "site_officiel": "https://www.sap.com",
+    "type_licence": "Commercial",
+    "categorie": "Gestion",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "quickbooks.exe": {
+    "nom_produit": "QuickBooks Desktop",
+    "editeur": "Intuit",
+    "pays": "USA",
+    "site_officiel": "https://quickbooks.intuit.com",
+    "type_licence": "Commercial",
+    "categorie": "Gestion",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sage50.exe": {
+    "nom_produit": "Sage 50 Accounting",
+    "editeur": "Sage Group",
+    "pays": "United Kingdom",
+    "site_officiel": "https://www.sage.com",
+    "type_licence": "Commercial",
+    "categorie": "Gestion",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sage1000.exe": {
+    "nom_produit": "Sage 1000",
+    "editeur": "Sage Group",
+    "pays": "United Kingdom",
+    "site_officiel": "https://www.sage.com",
+    "type_licence": "Commercial",
+    "categorie": "Gestion",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "oracle.exe": {
+    "nom_produit": "Oracle Database",
+    "editeur": "Oracle Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.oracle.com/database",
+    "type_licence": "Commercial",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sqldeveloper.exe": {
+    "nom_produit": "Oracle SQL Developer",
+    "editeur": "Oracle Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.oracle.com/tools/sqldeveloper",
+    "type_licence": "Gratuit",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "tableau.exe": {
+    "nom_produit": "Tableau Desktop",
+    "editeur": "Salesforce",
+    "pays": "USA",
+    "site_officiel": "https://www.tableau.com",
+    "type_licence": "Commercial",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "powerbi.exe": {
+    "nom_produit": "Microsoft Power BI Desktop",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://powerbi.microsoft.com",
+    "type_licence": "Gratuit",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mspaint.exe": {
+    "nom_produit": "Paint",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "calc.exe": {
+    "nom_produit": "Calculator",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "pwsh.exe": {
+    "nom_produit": "PowerShell Core",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://github.com/PowerShell/PowerShell",
+    "type_licence": "Open Source",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "msconfig.exe": {
+    "nom_produit": "System Configuration",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "control.exe": {
+    "nom_produit": "Control Panel",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mmc.exe": {
+    "nom_produit": "Microsoft Management Console",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "dxdiag.exe": {
+    "nom_produit": "DirectX Diagnostic Tool",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "msinfo32.exe": {
+    "nom_produit": "System Information",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "resmon.exe": {
+    "nom_produit": "Resource Monitor",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "cleanmgr.exe": {
+    "nom_produit": "Disk Cleanup",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "dfrgui.exe": {
+    "nom_produit": "Disk Defragmenter",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "snippingtool.exe": {
+    "nom_produit": "Snipping Tool",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mstsc.exe": {
+    "nom_produit": "Remote Desktop Connection",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "telnet.exe": {
+    "nom_produit": "Telnet Client",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "ssh.exe": {
+    "nom_produit": "OpenSSH Client",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "nslookup.exe": {
+    "nom_produit": "DNS Lookup",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "tracert.exe": {
+    "nom_produit": "Traceroute",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "ping.exe": {
+    "nom_produit": "Ping",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "netstat.exe": {
+    "nom_produit": "Netstat",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "ipconfig.exe": {
+    "nom_produit": "IP Configuration",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wmic.exe": {
+    "nom_produit": "WMI Command-line",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "charmap.exe": {
+    "nom_produit": "Character Map",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "write.exe": {
+    "nom_produit": "WordPad",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "magnify.exe": {
+    "nom_produit": "Magnifier",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "osk.exe": {
+    "nom_produit": "On-Screen Keyboard",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "narrator.exe": {
+    "nom_produit": "Narrator",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "perfmon.exe": {
+    "nom_produit": "Performance Monitor",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "",
+    "type_licence": "Gratuit",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "nvcplui.exe": {
+    "nom_produit": "NVIDIA Control Panel",
+    "editeur": "NVIDIA Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.nvidia.com",
+    "type_licence": "Gratuit",
+    "categorie": "Pilote",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "nvidia-smi.exe": {
+    "nom_produit": "NVIDIA SMI",
+    "editeur": "NVIDIA Corporation",
+    "pays": "USA",
+    "site_officiel": "https://developer.nvidia.com/nvidia-system-management-interface",
+    "type_licence": "Gratuit",
+    "categorie": "Pilote",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "radeonsoftware.exe": {
+    "nom_produit": "AMD Radeon Software",
+    "editeur": "Advanced Micro Devices",
+    "pays": "USA",
+    "site_officiel": "https://www.amd.com/software",
+    "type_licence": "Gratuit",
+    "categorie": "Pilote",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "teamviewer.exe": {
+    "nom_produit": "TeamViewer",
+    "editeur": "TeamViewer AG",
+    "pays": "Germany",
+    "site_officiel": "https://www.teamviewer.com",
+    "type_licence": "Gratuit",
+    "categorie": "Support distant",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "anydesk.exe": {
+    "nom_produit": "AnyDesk",
+    "editeur": "AnyDesk Software GmbH",
+    "pays": "Germany",
+    "site_officiel": "https://anydesk.com",
+    "type_licence": "Gratuit",
+    "categorie": "Support distant",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mobaxterm.exe": {
+    "nom_produit": "MobaXterm",
+    "editeur": "Mobatek",
+    "pays": "France",
+    "site_officiel": "https://mobaxterm.mobatek.net",
+    "type_licence": "Gratuit",
+    "categorie": "Support distant",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mremoteng.exe": {
+    "nom_produit": "mRemoteNG",
+    "editeur": "mRemoteNG",
+    "pays": "",
+    "site_officiel": "https://mremoteng.org",
+    "type_licence": "Open Source",
+    "categorie": "Support distant",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "vncviewer.exe": {
+    "nom_produit": "VNC Viewer",
+    "editeur": "RealVNC",
+    "pays": "United Kingdom",
+    "site_officiel": "https://www.realvnc.com",
+    "type_licence": "Gratuit",
+    "categorie": "Support distant",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "openvpn.exe": {
+    "nom_produit": "OpenVPN",
+    "editeur": "OpenVPN Inc.",
+    "pays": "USA",
+    "site_officiel": "https://openvpn.net",
+    "type_licence": "Open Source",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "veeam.exe": {
+    "nom_produit": "Veeam Backup",
+    "editeur": "Veeam Software",
+    "pays": "Switzerland",
+    "site_officiel": "https://www.veeam.com",
+    "type_licence": "Commercial",
+    "categorie": "Sauvegarde",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "veeamagent.exe": {
+    "nom_produit": "Veeam Agent for Windows",
+    "editeur": "Veeam Software",
+    "pays": "Switzerland",
+    "site_officiel": "https://www.veeam.com/agent",
+    "type_licence": "Gratuit",
+    "categorie": "Sauvegarde",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "veeamconsole.exe": {
+    "nom_produit": "Veeam Backup Console",
+    "editeur": "Veeam Software",
+    "pays": "Switzerland",
+    "site_officiel": "https://www.veeam.com",
+    "type_licence": "Gratuit",
+    "categorie": "Sauvegarde",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "acronis.exe": {
+    "nom_produit": "Acronis Cyber Protect",
+    "editeur": "Acronis International GmbH",
+    "pays": "Switzerland",
+    "site_officiel": "https://www.acronis.com",
+    "type_licence": "Commercial",
+    "categorie": "Sauvegarde",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "goggalaxy.exe": {
+    "nom_produit": "GOG Galaxy",
+    "editeur": "CD Projekt",
+    "pays": "Poland",
+    "site_officiel": "https://www.gog.com/galaxy",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "ubisoftconnect.exe": {
+    "nom_produit": "Ubisoft Connect",
+    "editeur": "Ubisoft",
+    "pays": "France",
+    "site_officiel": "https://ubisoftconnect.com",
+    "type_licence": "Gratuit",
+    "categorie": "Jeu",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "acad.exe": {
+    "nom_produit": "AutoCAD",
+    "editeur": "Autodesk",
+    "pays": "USA",
+    "site_officiel": "https://www.autodesk.com/autocad",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "inventor.exe": {
+    "nom_produit": "Autodesk Inventor",
+    "editeur": "Autodesk",
+    "pays": "USA",
+    "site_officiel": "https://www.autodesk.com/inventor",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "revit.exe": {
+    "nom_produit": "Autodesk Revit",
+    "editeur": "Autodesk",
+    "pays": "USA",
+    "site_officiel": "https://www.autodesk.com/revit",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "3dsmax.exe": {
+    "nom_produit": "3ds Max",
+    "editeur": "Autodesk",
+    "pays": "USA",
+    "site_officiel": "https://www.autodesk.com/3ds-max",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "maya.exe": {
+    "nom_produit": "Autodesk Maya",
+    "editeur": "Autodesk",
+    "pays": "USA",
+    "site_officiel": "https://www.autodesk.com/maya",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "solidworks.exe": {
+    "nom_produit": "SOLIDWORKS",
+    "editeur": "Dassault Systèmes",
+    "pays": "France",
+    "site_officiel": "https://www.solidworks.com",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "sketchup.exe": {
+    "nom_produit": "SketchUp",
+    "editeur": "Trimble Inc.",
+    "pays": "USA",
+    "site_officiel": "https://www.sketchup.com",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "matlab.exe": {
+    "nom_produit": "MATLAB",
+    "editeur": "MathWorks",
+    "pays": "USA",
+    "site_officiel": "https://www.mathworks.com/products/matlab",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "fusion360.exe": {
+    "nom_produit": "Autodesk Fusion 360",
+    "editeur": "Autodesk",
+    "pays": "USA",
+    "site_officiel": "https://www.autodesk.com/fusion360",
+    "type_licence": "Commercial",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "unity.exe": {
+    "nom_produit": "Unity Editor",
+    "editeur": "Unity Technologies",
+    "pays": "USA",
+    "site_officiel": "https://unity.com",
+    "type_licence": "Gratuit",
+    "categorie": "Creation",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "7z2201-x64.msi": {
+    "nom_produit": "7-Zip MSI",
+    "editeur": "Igor Pavlov",
+    "pays": "Russia",
+    "site_officiel": "https://www.7-zip.org",
+    "type_licence": "Open Source",
+    "categorie": "Utilitaire",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "googlechromestandaloneenterprise.msi": {
+    "nom_produit": "Google Chrome Enterprise",
+    "editeur": "Google LLC",
+    "pays": "USA",
+    "site_officiel": "https://cloud.google.com/chrome-enterprise",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "microsoftedgeenterprisex64.msi": {
+    "nom_produit": "Microsoft Edge Enterprise",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/edge",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "firefoxsetup.msi": {
+    "nom_produit": "Mozilla Firefox MSI",
+    "editeur": "Mozilla Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.mozilla.org/firefox",
+    "type_licence": "Gratuit",
+    "categorie": "Navigateur",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "office2021proplus.msi": {
+    "nom_produit": "Microsoft 365 Apps",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://www.microsoft.com/office",
+    "type_licence": "Commercial",
+    "categorie": "Bureautique",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "ssms-setup-enu.msi": {
+    "nom_produit": "SQL Server Management Studio MSI",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://docs.microsoft.com/sql/ssms",
+    "type_licence": "Gratuit",
+    "categorie": "Base de données",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "dotnet48-x64.msi": {
+    "nom_produit": ".NET Framework 4.8",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://dotnet.microsoft.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "dotnet80-x64.msi": {
+    "nom_produit": ".NET 8.0 Runtime",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://dotnet.microsoft.com",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "vcredist14-x64.msi": {
+    "nom_produit": "Visual C++ Redist 2015-2022",
+    "editeur": "Microsoft Corporation",
+    "pays": "USA",
+    "site_officiel": "https://learn.microsoft.com/cpp/windows",
+    "type_licence": "Gratuit",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "openvpn-install.msi": {
+    "nom_produit": "OpenVPN MSI",
+    "editeur": "OpenVPN Inc.",
+    "pays": "USA",
+    "site_officiel": "https://openvpn.net",
+    "type_licence": "Open Source",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "zoominstallerfull.msi": {
+    "nom_produit": "Zoom MSI",
+    "editeur": "Zoom Video Communications",
+    "pays": "USA",
+    "site_officiel": "https://zoom.us",
+    "type_licence": "Gratuit",
+    "categorie": "Communication",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "teamviewer_host.msi": {
+    "nom_produit": "TeamViewer Host MSI",
+    "editeur": "TeamViewer AG",
+    "pays": "Germany",
+    "site_officiel": "https://www.teamviewer.com",
+    "type_licence": "Gratuit",
+    "categorie": "Support distant",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "winscp-6.1.2.msi": {
+    "nom_produit": "WinSCP MSI",
+    "editeur": "Martin Prikryl",
+    "pays": "Czechia",
+    "site_officiel": "https://winscp.net",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "putty-0.80-installer.msi": {
+    "nom_produit": "PuTTY MSI",
+    "editeur": "Simon Tatham",
+    "pays": "United Kingdom",
+    "site_officiel": "https://www.putty.org",
+    "type_licence": "Open Source",
+    "categorie": "Développement",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "veracrypt-1.26.7.msi": {
+    "nom_produit": "VeraCrypt MSI",
+    "editeur": "IDRIX",
+    "pays": "France",
+    "site_officiel": "https://www.veracrypt.fr",
+    "type_licence": "Open Source",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "keepass-2.55.msi": {
+    "nom_produit": "KeePass MSI",
+    "editeur": "Dominik Reichl",
+    "pays": "Germany",
+    "site_officiel": "https://keepass.info",
+    "type_licence": "Open Source",
+    "categorie": "Sécurité",
+    "plateforme": [
+      "Windows"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "akismet": {
+    "nom_produit": "Akismet Anti-Spam",
+    "editeur": "Automattic",
+    "pays": "USA",
+    "site_officiel": "https://akismet.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wordpress-seo": {
+    "nom_produit": "Yoast SEO",
+    "editeur": "Yoast",
+    "pays": "Pays-Bas",
+    "site_officiel": "https://yoast.com/wordpress/plugins/seo/",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "woocommerce": {
+    "nom_produit": "WooCommerce",
+    "editeur": "WooCommerce",
+    "pays": "USA",
+    "site_officiel": "https://woocommerce.com",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "elementor": {
+    "nom_produit": "Elementor Website Builder",
+    "editeur": "Elementor",
+    "pays": "Isra�l",
+    "site_officiel": "https://elementor.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "contact-form-7": {
+    "nom_produit": "Contact Form 7",
+    "editeur": "Takayuki Miyoshi",
+    "pays": "Japon",
+    "site_officiel": "https://contactform7.com",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "jetpack": {
+    "nom_produit": "Jetpack",
+    "editeur": "Automattic",
+    "pays": "USA",
+    "site_officiel": "https://jetpack.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wordfence": {
+    "nom_produit": "Wordfence Security",
+    "editeur": "Defiant",
+    "pays": "USA",
+    "site_officiel": "https://www.wordfence.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "classic-editor": {
+    "nom_produit": "Classic Editor",
+    "editeur": "WordPress Contributors",
+    "pays": "USA",
+    "site_officiel": "https://wordpress.org/plugins/classic-editor/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "updraftplus": {
+    "nom_produit": "UpdraftPlus Backup/Restore",
+    "editeur": "UpdraftPlus",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://updraftplus.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "litespeed-cache": {
+    "nom_produit": "LiteSpeed Cache",
+    "editeur": "LiteSpeed Technologies",
+    "pays": "USA",
+    "site_officiel": "https://www.litespeedtech.com/products/cache-plugins/wordpress-accelerator",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wp-rocket": {
+    "nom_produit": "WP Rocket",
+    "editeur": "WP Rocket",
+    "pays": "France",
+    "site_officiel": "https://wp-rocket.me",
+    "type_licence": "Payant",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wp-super-cache": {
+    "nom_produit": "WP Super Cache",
+    "editeur": "Automattic",
+    "pays": "USA",
+    "site_officiel": "https://wordpress.org/plugins/wp-super-cache/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "duplicate-post": {
+    "nom_produit": "Duplicate Post",
+    "editeur": "Yoast",
+    "pays": "Pays-Bas",
+    "site_officiel": "https://yoast.com/wordpress/plugins/duplicate-post/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "redirection": {
+    "nom_produit": "Redirection",
+    "editeur": "John Godley",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://redirection.me",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "w3-total-cache": {
+    "nom_produit": "W3 Total Cache",
+    "editeur": "BoldGrid",
+    "pays": "USA",
+    "site_officiel": "https://www.boldgrid.com/w3-total-cache/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "seo-by-rank-math": {
+    "nom_produit": "Rank Math SEO",
+    "editeur": "Rank Math",
+    "pays": "Inde",
+    "site_officiel": "https://rankmath.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "really-simple-ssl": {
+    "nom_produit": "Really Simple SSL",
+    "editeur": "Really Simple Plugins",
+    "pays": "Pays-Bas",
+    "site_officiel": "https://really-simple-ssl.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "better-wp-security": {
+    "nom_produit": "iThemes Security",
+    "editeur": "SolidWP",
+    "pays": "USA",
+    "site_officiel": "https://solidwp.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wpforms-lite": {
+    "nom_produit": "WPForms",
+    "editeur": "WPForms",
+    "pays": "USA",
+    "site_officiel": "https://wpforms.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "gravityforms": {
+    "nom_produit": "Gravity Forms",
+    "editeur": "Gravity Forms",
+    "pays": "USA",
+    "site_officiel": "https://www.gravityforms.com",
+    "type_licence": "Payant",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wpml": {
+    "nom_produit": "WPML",
+    "editeur": "OnTheGoSystems",
+    "pays": "Chypre",
+    "site_officiel": "https://wpml.org",
+    "type_licence": "Payant",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "polylang": {
+    "nom_produit": "Polylang",
+    "editeur": "WP SYNTEX",
+    "pays": "France",
+    "site_officiel": "https://polylang.pro",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "astra": {
+    "nom_produit": "Astra Theme",
+    "editeur": "Brainstorm Force",
+    "pays": "Inde",
+    "site_officiel": "https://wpastra.com",
+    "type_licence": "Freemium",
+    "categorie": "Theme CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "hello-elementor": {
+    "nom_produit": "Hello Elementor Theme",
+    "editeur": "Elementor",
+    "pays": "Isra�l",
+    "site_officiel": "https://elementor.com/hello-theme/",
+    "type_licence": "Open Source",
+    "categorie": "Theme CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "oceanwp": {
+    "nom_produit": "OceanWP Theme",
+    "editeur": "OceanWP",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://oceanwp.org",
+    "type_licence": "Freemium",
+    "categorie": "Theme CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "generatepress": {
+    "nom_produit": "GeneratePress Theme",
+    "editeur": "GeneratePress",
+    "pays": "USA",
+    "site_officiel": "https://generatepress.com",
+    "type_licence": "Freemium",
+    "categorie": "Theme CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "divi": {
+    "nom_produit": "Divi Theme",
+    "editeur": "Elegant Themes",
+    "pays": "USA",
+    "site_officiel": "https://www.elegantthemes.com/gallery/divi/",
+    "type_licence": "Payant",
+    "categorie": "Theme CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "avada": {
+    "nom_produit": "Avada Theme",
+    "editeur": "ThemeFusion",
+    "pays": "Australie",
+    "site_officiel": "https://avada.theme-fusion.com",
+    "type_licence": "Payant",
+    "categorie": "Theme CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "maintenance": {
+    "nom_produit": "Maintenance",
+    "editeur": "Themeisle",
+    "pays": "Roumanie",
+    "site_officiel": "https://themeisle.com/plugins/maintenance/",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "all-in-one-wp-migration": {
+    "nom_produit": "All-in-One WP Migration",
+    "editeur": "ServMask",
+    "pays": "France",
+    "site_officiel": "https://servmask.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "smart-slider-3": {
+    "nom_produit": "Smart Slider 3",
+    "editeur": "Nextend",
+    "pays": "Hongrie",
+    "site_officiel": "https://smartslider3.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wp-optimize": {
+    "nom_produit": "WP-Optimize",
+    "editeur": "UpdraftPlus",
+    "pays": "Royaume-Uni",
+    "site_officiel": "https://getwpoptimize.com",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "mailpoet": {
+    "nom_produit": "MailPoet",
+    "editeur": "MailPoet",
+    "pays": "France",
+    "site_officiel": "https://www.mailpoet.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "newsletter": {
+    "nom_produit": "Newsletter",
+    "editeur": "The Newsletter Team",
+    "pays": "Italie",
+    "site_officiel": "https://www.thenewsletterplugin.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "tablepress": {
+    "nom_produit": "TablePress",
+    "editeur": "Tobias B�thge",
+    "pays": "Allemagne",
+    "site_officiel": "https://tablepress.org",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "advanced-custom-fields": {
+    "nom_produit": "Advanced Custom Fields",
+    "editeur": "WP Engine",
+    "pays": "USA",
+    "site_officiel": "https://www.advancedcustomfields.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "custom-post-type-ui": {
+    "nom_produit": "Custom Post Type UI",
+    "editeur": "WebDevStudios",
+    "pays": "USA",
+    "site_officiel": "https://pluginize.com/plugins/custom-post-type-ui/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wp-multibyte-patch": {
+    "nom_produit": "WP Multibyte Patch",
+    "editeur": "Takayuki Miyoshi",
+    "pays": "Japon",
+    "site_officiel": "https://wordpress.org/plugins/wp-multibyte-patch/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "broken-link-checker": {
+    "nom_produit": "Broken Link Checker",
+    "editeur": "WPMU DEV",
+    "pays": "Australie",
+    "site_officiel": "https://wpmudev.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "user-role-editor": {
+    "nom_produit": "User Role Editor",
+    "editeur": "Vladimir Garagulya",
+    "pays": "Ukraine",
+    "site_officiel": "https://www.user-role-editor.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "smush": {
+    "nom_produit": "Smush Image Optimization",
+    "editeur": "WPMU DEV",
+    "pays": "Australie",
+    "site_officiel": "https://wpmudev.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "google-site-kit": {
+    "nom_produit": "Google Site Kit",
+    "editeur": "Google LLC",
+    "pays": "USA",
+    "site_officiel": "https://sitekit.withgoogle.com",
+    "type_licence": "Gratuit",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "monsterinsights": {
+    "nom_produit": "MonsterInsights",
+    "editeur": "MonsterInsights",
+    "pays": "USA",
+    "site_officiel": "https://www.monsterinsights.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "matomo": {
+    "nom_produit": "Matomo Analytics",
+    "editeur": "Matomo",
+    "pays": "Nouvelle-Z�lande",
+    "site_officiel": "https://matomo.org",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "tawkto-live-chat": {
+    "nom_produit": "Tawk.To Live Chat",
+    "editeur": "Tawk.To",
+    "pays": " �tats-Unis",
+    "site_officiel": "https://www.tawk.to",
+    "type_licence": "Gratuit",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "yith-woocommerce-wishlist": {
+    "nom_produit": "YITH WooCommerce Wishlist",
+    "editeur": "YITH",
+    "pays": "Italie",
+    "site_officiel": "https://yithemes.com/themes/plugins/yith-woocommerce-wishlist/",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "revslider": {
+    "nom_produit": "Slider Revolution",
+    "editeur": "ThemePunch",
+    "pays": "Allemagne",
+    "site_officiel": "https://www.sliderrevolution.com",
+    "type_licence": "Payant",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "visual-composer": {
+    "nom_produit": "WPBakery Page Builder",
+    "editeur": "WPBakery",
+    "pays": "France",
+    "site_officiel": "https://wpbakery.com",
+    "type_licence": "Payant",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "tinymce-advanced": {
+    "nom_produit": "TinyMCE Advanced",
+    "editeur": "Andrew Ozz",
+    "pays": "USA",
+    "site_officiel": "https://wordpress.org/plugins/tinymce-advanced/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "child-theme-configurator": {
+    "nom_produit": "Child Theme Configurator",
+    "editeur": "Lilaea Media",
+    "pays": "USA",
+    "site_officiel": "https://childthemeconfigurator.com",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "invisible-recaptcha": {
+    "nom_produit": "Invisible reCaptcha",
+    "editeur": "WP White Security",
+    "pays": "Inde",
+    "site_officiel": "https://wordpress.org/plugins/invisible-recaptcha/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "limit-login-attempts-reloaded": {
+    "nom_produit": "Limit Login Attempts Reloaded",
+    "editeur": "Limit Login Attempts Reloaded",
+    "pays": "USA",
+    "site_officiel": "https://www.limitloginattempts.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "duplicator": {
+    "nom_produit": "Duplicator",
+    "editeur": "Snap Creek",
+    "pays": "USA",
+    "site_officiel": "https://duplicator.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "loginizer": {
+    "nom_produit": "Loginizer",
+    "editeur": "Softaculous",
+    "pays": "Inde",
+    "site_officiel": "https://loginizer.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "cornerstone": {
+    "nom_produit": "Cornerstone",
+    "editeur": "Themeco",
+    "pays": "USA",
+    "site_officiel": "https://theme.co/cornerstone",
+    "type_licence": "Payant",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "uncanny-automator": {
+    "nom_produit": "Uncanny Automator",
+    "editeur": "Uncanny Owl",
+    "pays": "Canada",
+    "site_officiel": "https://automatorplugin.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "fluentform": {
+    "nom_produit": "Fluent Forms",
+    "editeur": "Fluent Forms",
+    "pays": "Bangladesh",
+    "site_officiel": "https://fluentforms.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "ninja-forms": {
+    "nom_produit": "Ninja Forms",
+    "editeur": "Ninja Forms",
+    "pays": "USA",
+    "site_officiel": "https://ninjaforms.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "formidable": {
+    "nom_produit": "Formidable Forms",
+    "editeur": "Strategy11",
+    "pays": "USA",
+    "site_officiel": "https://formidableforms.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "learnpress": {
+    "nom_produit": "LearnPress",
+    "editeur": "ThimPress",
+    "pays": "Vietnam",
+    "site_officiel": "https://learnpress.thimpress.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "tutor-lms": {
+    "nom_produit": "Tutor LMS",
+    "editeur": "Themeum",
+    "pays": "Bangladesh",
+    "site_officiel": "https://www.themeum.com/product/tutor-lms/",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "woofunnels": {
+    "nom_produit": "FunnelKit",
+    "editeur": "FunnelKit",
+    "pays": "Inde",
+    "site_officiel": "https://funnelkit.com",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "autoptimize": {
+    "nom_produit": "Autoptimize",
+    "editeur": "Frank Goossens",
+    "pays": "Belgique",
+    "site_officiel": "https://autoptimize.com",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "divi-supreme-pro": {
+    "nom_produit": "Divi Supreme Pro",
+    "editeur": "Divi Supreme",
+    "pays": "US",
+    "site_officiel": "https://divisupreme.com",
+    "type_licence": "Commercial",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "easy-https-redirection": {
+    "nom_produit": "Easy HTTPS (SSL) Redirection",
+    "editeur": "Tips and Tricks HQ",
+    "pays": "AU",
+    "site_officiel": "https://wordpress.org/plugins/easy-https-redirection/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "instant-images": {
+    "nom_produit": "Instant Images",
+    "editeur": "Darren Cooney",
+    "pays": "IE",
+    "site_officiel": "https://wordpress.org/plugins/instant-images/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "popups-for-divi": {
+    "nom_produit": "Popups for Divi",
+    "editeur": "divimode",
+    "pays": "US",
+    "site_officiel": "https://divimode.com/popups-for-divi/",
+    "type_licence": "Commercial",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "smart-custom-404-page": {
+    "nom_produit": "Smart Custom 404 Error Page",
+    "editeur": "NerdPress",
+    "pays": "US",
+    "site_officiel": "https://wordpress.org/plugins/smart-custom-404-page/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "supreme-modules-lite": {
+    "nom_produit": "Supreme Modules Lite - Divi Theme, Extra Theme and Divi Builder",
+    "editeur": "Supreme Modules",
+    "pays": "US",
+    "site_officiel": "https://wordpress.org/plugins/supreme-modules-lite/",
+    "type_licence": "Freemium",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "vod-infomaniak": {
+    "nom_produit": "VOD Infomaniak",
+    "editeur": "Infomaniak",
+    "pays": "CH",
+    "site_officiel": "https://wordpress.org/plugins/vod-infomaniak/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wp-and-divi-icons": {
+    "nom_produit": "WP and Divi Icons",
+    "editeur": "WP Zone",
+    "pays": "US",
+    "site_officiel": "https://wordpress.org/plugins/wp-and-divi-icons/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  },
+  "wp-armour-extended": {
+    "nom_produit": "WP Armour - Honeypot Anti Spam",
+    "editeur": "Dnesscarkey",
+    "pays": "NG",
+    "site_officiel": "https://wordpress.org/plugins/wp-armour-extended/",
+    "type_licence": "Open Source",
+    "categorie": "Extension CMS",
+    "plateforme": [
+      "WordPress"
+    ],
+    "cpe": "",
+    "anssi_statut": "Non reference",
+    "eol": null
+  }
+}

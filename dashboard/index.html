@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Parc — Enterprise Cyber Asset Management Platform</title>
+  <meta name="description" content="Plateforme enterprise de gestion des actifs cyber, conformité ANSSI, NIS2, ISO 27001 et gouvernance logicielle du parc informatique.">
+  <meta name="theme-color" content="#0a0d14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark" id="app-root">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     TOPBAR
+════════════════════════════════════════════════════════════════════════ -->
+<header id="topbar" role="banner" aria-label="Barre de navigation principale">
+  <div id="topbar-left">
+    <button id="sidebar-toggle" class="icon-btn" aria-label="Ouvrir/fermer la navigation" aria-expanded="true" aria-controls="sidebar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div id="brand" aria-label="Cyber Parc">
+      <div id="brand-icon" aria-hidden="true">
+      <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Cerveau -->
+  <path d="M128 35
+  C95 15 55 35 60 75
+  C30 95 45 145 75 150
+  C80 185 120 195 128 170
+  C136 195 176 185 181 150
+  C211 145 226 95 196 75
+  C201 35 161 15 128 35Z"
+  stroke="#4F46E5"
+  stroke-width="8"
+  fill="#EEF2FF"
+  stroke-linejoin="round"/>
+
+
+  <!-- Séparation cerveau -->
+  <path d="M128 45V170"
+  stroke="#4F46E5"
+  stroke-width="7"
+  stroke-linecap="round"/>
+
+
+  <!-- Circuits informatiques -->
+  <path d="M90 80H70V105H90"
+  stroke="#06B6D4"
+  stroke-width="6"
+  stroke-linecap="round"
+  stroke-linejoin="round"/>
+
+  <path d="M166 80H186V105H166"
+  stroke="#06B6D4"
+  stroke-width="6"
+  stroke-linecap="round"
+  stroke-linejoin="round"/>
+
+
+  <path d="M80 130H105V150"
+  stroke="#06B6D4"
+  stroke-width="6"
+  stroke-linecap="round"/>
+
+
+  <path d="M176 130H151V150"
+  stroke="#06B6D4"
+  stroke-width="6"
+  stroke-linecap="round"/>
+
+
+  <!-- Noeuds réseau -->
+  <circle cx="70" cy="105" r="8" fill="#06B6D4"/>
+  <circle cx="186" cy="105" r="8" fill="#06B6D4"/>
+
+  <circle cx="105" cy="150" r="8" fill="#06B6D4"/>
+  <circle cx="151" cy="150" r="8" fill="#06B6D4"/>
+
+
+  <!-- Petite base serveur -->
+  <rect x="96" y="195" width="64" height="22" rx="6"
+  fill="#4F46E5"/>
+
+  <circle cx="112" cy="206" r="4" fill="white"/>
+  <circle cx="128" cy="206" r="4" fill="white"/>
+  <circle cx="144" cy="206" r="4" fill="white"/>
+
+</svg>
+
+      </div>
+      <div id="brand-text">
+        <span id="brand-name">CPR</span>
+        <span id="brand-sub">Enterprise Platform</span>
+      </div>
+    </div>
+    <div id="tenant-badge" aria-label="Tenant actif">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+      <span>Organisation Principale</span>
+    </div>
+  </div>
+
+  <div id="topbar-center">
+    <div id="global-search-wrap" role="search" aria-label="Recherche globale">
+      <svg class="search-icon-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input
+        id="global-search"
+        type="search"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-controls="search-results-dropdown"
+        aria-expanded="false"
+        aria-label="Rechercher machine, logiciel, CVE, IP, hash..."
+        placeholder="Rechercher machine, logiciel, CVE, IP, hash..."
+        autocomplete="off"
+        spellcheck="false"
+      >
+      <kbd class="search-kbd" aria-label="Raccourci clavier Ctrl K">Ctrl K</kbd>
+      <div id="search-results-dropdown" role="listbox" aria-label="Résultats de recherche"></div>
+    </div>
+  </div>
+
+  <div id="topbar-right">
+    <span id="server-status" class="offline" role="status" aria-live="polite" aria-label="Statut serveur">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span class="status-text">Hors ligne</span>
+    </span>
+
+    <button class="icon-btn" id="btn-new-scan" onclick="triggerNewScan()" aria-label="Lancer une nouvelle collecte" title="Nouvelle collecte">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      <span class="btn-label">Collecte</span>
+    </button>
+
+    <button class="icon-btn" id="btn-import-json" onclick="triggerImportJson()" aria-label="Importer un fichier JSON de collecte" title="Import JSON">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span class="btn-label">Import</span>
+    </button>
+
+    <button class="icon-btn" id="btn-briques" onclick="window.location.href='/briques.html'" aria-label="Briques logicielles" title="Briques logicielles (APIs, librairies, SaaS)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      <span class="btn-label">Briques</span>
+    </button>
+
+    <div class="topbar-divider" aria-hidden="true"></div>
+
+    <button class="icon-btn" id="btn-theme" onclick="toggleTheme()" aria-label="Changer le thème" title="Thème clair/sombre">
+      <svg id="theme-icon-dark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg id="theme-icon-light" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+
+    <div class="topbar-divider" aria-hidden="true"></div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SIDEBAR
+════════════════════════════════════════════════════════════════════════ -->
+<nav id="sidebar" role="navigation" aria-label="Navigation principale">
+  <div id="sidebar-inner">
+
+    <!-- Dashboard -->
+    <div class="nav-section">
+      <button class="nav-item active" data-tab="dashboard" aria-current="page" aria-label="Vue Globale - Tableau de bord">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span class="nav-label">Vue Globale</span>
+      </button>
+    </div>
+
+    <div class="nav-section-title" aria-label="Section Actifs">Actifs</div>
+
+    <div class="nav-section">
+      <button class="nav-item" data-tab="machines" aria-label="Machines - Postes de travail">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+        <span class="nav-label">Machines</span>
+      </button>
+    </div>
+
+    <div class="nav-section-title" aria-label="Section Logiciels">Logiciels</div>
+
+    <div class="nav-section">
+      <button class="nav-item" data-tab="catalogue" aria-label="Catalogue logiciels">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <span class="nav-label">Catalogue</span>
+      </button>
+
+    </div>
+
+    <div class="nav-section-title" aria-label="Section Sécurité">Sécurité</div>
+
+    <div class="nav-section">
+      <button class="nav-item" data-tab="vulnerabilites" aria-label="Vulnérabilités et CVE">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span class="nav-label">Vulnérabilités</span>
+        <span class="nav-badge danger" id="nav-badge-vuln" aria-live="polite"></span>
+      </button>
+<button class="nav-item" data-tab="securite" aria-label="Audit de sécurité">
+          <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+          <span class="nav-label">Audit Sécurité</span>
+        </button>
+    </div>
+
+    <div class="nav-section-title" aria-label="Section Conformité">Conformité</div>
+
+    <div class="nav-section">
+      <button class="nav-item" data-tab="conformite" aria-label="Conformité ANSSI">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span class="nav-label">ANSSI</span>
+      </button>
+    </div>
+
+    <div class="nav-section-title" aria-label="Section Droits">Droits</div>
+
+    <div class="nav-section">
+      <button class="nav-item" data-tab="droits" aria-label="Revue des droits et accès">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span class="nav-label">Droits</span>
+      </button>
+      <button class="nav-item" data-tab="droits-logiciels" aria-label="Droits par logiciel">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <span class="nav-label">Droits Logiciels</span>
+      </button>
+    </div>
+
+    <div class="nav-section-title" aria-label="Section Licences">Licences</div>
+
+    <div class="nav-section">
+      <button class="nav-item" data-tab="licences" aria-label="Gestion des licences logicielles">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        <span class="nav-label">Licences</span>
+      </button>
+    </div>
+
+    <div class="nav-section-title" aria-label="Section Analytiques">Analytics</div>
+
+    <div class="nav-section">
+      <button class="nav-item" data-tab="statistiques" aria-label="Statistiques et analytiques">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <span class="nav-label">Statistiques</span>
+      </button>
+    </div>
+
+    <div class="nav-section-title" aria-label="Section Historique">Historique</div>
+
+    <div class="nav-section">
+      <button class="nav-item" data-tab="historique" aria-label="Historique des événements">
+        <svg class="nav-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="12 8 12 12 14 14"/><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5"/></svg>
+        <span class="nav-label">Historique</span>
+      </button>
+    </div>
+
+    <!-- Sidebar footer -->
+    <div id="sidebar-footer">
+      <div id="sidebar-version">v2.0 Enterprise</div>
+      <div id="sidebar-build">Build 2026.06</div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     MAIN CONTENT
+════════════════════════════════════════════════════════════════════════ -->
+<main id="main-content" role="main" aria-label="Contenu principal">
+
+  <!-- ── Page Header (breadcrumb + actions) ── -->
+  <div id="page-header" aria-label="En-tête de page">
+    <div id="page-breadcrumb" role="navigation" aria-label="Fil d'Ariane">
+      <span id="breadcrumb-root">Cyber Parc</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      <span id="breadcrumb-current" aria-current="page">Vue Globale</span>
+    </div>
+    <div id="page-header-actions">
+      <button class="btn btn-ghost btn-sm" id="btn-refresh" onclick="refreshCurrentTab()" aria-label="Rafraîchir les données">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        Rafraîchir
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       TAB PANES
+  ═══════════════════════════════════════════════════════ -->
+
+  <!-- DASHBOARD -->
+  <section id="pane-dashboard" class="tab-pane active" role="region" aria-label="Tableau de bord Vue Globale">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Vue Globale</h2>
+        <p class="pane-subtitle">Posture de sécurité et indicateurs clés en temps réel</p>
+      </div>
+      <div class="pane-title-actions">
+        <button class="btn btn-sm" onclick="triggerImportJson()" aria-label="Importer un fichier JSON de collecte" style="border-color:var(--border);color:var(--text);background:var(--surface)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Import JSON
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="triggerNewScan()" aria-label="Lancer une nouvelle collecte">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          Nouvelle Collecte
+        </button>
+      </div>
+    </div>
+    <div class="stats-grid" id="dash-kpi" aria-label="Indicateurs clés de performance"></div>
+    <div class="charts-grid" id="dash-charts" aria-label="Graphiques de répartition"></div>
+  </section>
+
+  <!-- CATALOGUE -->
+  <section id="pane-catalogue" class="tab-pane" role="region" aria-label="Catalogue des logiciels">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Catalogue Logiciels</h2>
+        <p class="pane-subtitle">Inventaire centralisé de toutes les applications détectées</p>
+      </div>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Filtres du catalogue">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="cat-search" type="search" placeholder="Rechercher..." oninput="filterCatalogue()" aria-label="Rechercher dans le catalogue" style="width:140px">
+        </div>
+        <select class="filter-select" id="cat-cat" onchange="filterCatalogue()" aria-label="Catégorie"><option value="">Catégorie</option></select>
+        <select class="filter-select" id="cat-risk" onchange="filterCatalogue()" aria-label="Risque">
+          <option value="">Risque</option>
+          <option value="Critique">Critique</option>
+          <option value="Eleve">Élevé</option>
+          <option value="Moyen">Moyen</option>
+          <option value="Faible">Faible</option>
+        </select>
+        <select class="filter-select" id="cat-metier" onchange="filterCatalogue()" aria-label="Métier">
+          <option value="">Métier</option>
+          <option value="Bureautique">Bureautique</option>
+          <option value="Developpement">Dev</option>
+          <option value="Securite">Sécurité</option>
+          <option value="Multimedia">Multimédia</option>
+          <option value="Reseau">Réseau</option>
+          <option value="BaseDonnees">BDD</option>
+          <option value="Systeme">Système</option>
+          <option value="Utilitaire">Utilitaire</option>
+          <option value="Design">Design</option>
+          <option value="Communication">Comm.</option>
+          <option value="Finance">Finance</option>
+          <option value="Autre">Autre</option>
+        </select>
+        <select class="filter-select" id="cat-pays" onchange="filterCatalogue()" aria-label="Pays éditeur"><option value="">Pays éditeur</option></select>
+        <select class="filter-select" id="cat-pays-siege" onchange="filterCatalogue()" aria-label="Siège social"><option value="">Siège social</option></select>
+        <select class="filter-select" id="cat-risque-souv" onchange="filterCatalogue()" aria-label="Risque souveraineté">
+          <option value="">Risque souv.</option>
+          <option value="Critique">Critique</option>
+          <option value="Eleve">Élevé</option>
+          <option value="Moyen">Moyen</option>
+          <option value="Faible">Faible</option>
+        </select>
+        <select class="filter-select" id="cat-origine" onchange="filterCatalogue()" aria-label="Origine">
+          <option value="">Origine</option>
+          <option value="Windows">Windows</option>
+          <option value="Intune">Intune</option>
+          <option value="Utilisateur">Utilisateur</option>
+        </select>
+        <select class="filter-select" id="cat-source" onchange="filterCatalogue()" aria-label="Source">
+          <option value="">Source</option>
+          <option value="Registry">Registry</option>
+          <option value="Appx">Appx</option>
+          <option value="Winget">Winget</option>
+          <option value="Chocolatey">Choco</option>
+          <option value="Portable">Portable</option>
+          <option value="PATH">PATH</option>
+          <option value="StartMenu">Start</option>
+          <option value="WindowsFeature">WinFeat</option>
+          <option value="pip">pip</option>
+          <option value="npm">npm</option>
+          <option value="WSL">WSL</option>
+        </select>
+        <select class="filter-select" id="cat-type" onchange="filterCatalogue()" aria-label="Type">
+          <option value="">Type</option>
+          <option value="systeme">Système</option>
+          <option value="utilisateur">User</option>
+          <option value="portable">Portable</option>
+          <option value="dev">Dev</option>
+        </select>
+        <select class="filter-select" id="cat-niveau" onchange="filterCatalogue()" aria-label="Niveau">
+          <option value="">Niveau</option>
+          <option value="Windows Base">Windows</option>
+          <option value="Installé par Administrateur">Admin</option>
+          <option value="Installé par Utilisateur courant">User</option>
+        </select>
+        <select class="filter-select" id="cat-provenance" onchange="filterCatalogue()" aria-label="Provenance"><option value="">Provenance</option></select>
+        <select class="filter-select" id="cat-eol" onchange="filterCatalogue()" aria-label="EOL">
+          <option value="">EOL</option>
+          <option value="OUI">EOL</option>
+        </select>
+        <select class="filter-select" id="cat-approuve" onchange="filterCatalogue()" aria-label="Approbation">
+          <option value="">Approb.</option>
+          <option value="1">Approuvé</option>
+          <option value="0">Non</option>
+        </select>
+        <select class="filter-select" id="cat-ref" onchange="filterCatalogue()" aria-label="État réf">
+          <option value="">Réf.</option>
+          <option value="incomplet">Incompl.</option>
+          <option value="complet">Complet</option>
+        </select>
+        <select class="filter-select" id="cat-editeur-type" onchange="filterCatalogue()" aria-label="Éditeur">
+          <option value="">Édit.</option>
+          <option value="microsoft">MS</option>
+          <option value="tiers">Tiers</option>
+        </select>
+        <select class="filter-select" id="cat-postes" onchange="filterCatalogue()" aria-label="Postes">
+          <option value="">Postes</option>
+          <option value="1">1</option>
+          <option value="2-5">2-5</option>
+          <option value="6-20">6-20</option>
+          <option value="21-100">21-100</option>
+          <option value="101+">101+</option>
+        </select>
+        <button class="btn btn-ghost btn-sm" id="cat-enrich-sov" onclick="enrichSouverainete()" title="Enrichir les donnees de souverainete (WHOIS)" style="padding:4px 8px;font-size:11px;white-space:nowrap">Enrichir Souv.</button>
+        <button class="btn btn-ghost btn-sm" id="cat-group-toggle" onclick="toggleCatalogueGroup()" title="Regrouper par métier" style="padding:4px 8px;font-size:11px;white-space:nowrap">⊞ Groupe</button>
+      </div>
+      <div class="toolbar-right">
+        <span id="cat-count" class="record-count" aria-live="polite" aria-label="Nombre de logiciels"></span>
+        <div class="pagination-controls" style="display:inline-flex;align-items:center;gap:4px;margin-right:8px">
+          <select id="cat-per-page" class="filter-select" onchange="changePerPage(this.value)" aria-label="Lignes par page" style="width:auto;font-size:11px;padding:2px 4px">
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100" selected>100</option>
+            <option value="250">250</option>
+          </select>
+          <button class="btn btn-ghost btn-sm" id="cat-prev" onclick="goToPage(currentPage-1)" disabled style="padding:2px 6px;font-size:11px">◀</button>
+          <span id="cat-page-info" style="font-size:11px;color:var(--text-muted);white-space:nowrap">Page 1/1</span>
+          <button class="btn btn-ghost btn-sm" id="cat-next" onclick="goToPage(currentPage+1)" disabled style="padding:2px 6px;font-size:11px">▶</button>
+        </div>
+        <div class="export-dropdown">
+          <button class="btn btn-ghost btn-sm" onclick="toggleExport('cat')" aria-label="Exporter le catalogue" aria-haspopup="true">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Exporter
+          </button>
+          <div class="export-menu" id="export-menu-cat" role="menu">
+            <a href="#" role="menuitem" onclick="exportData('logiciels','csv');return false">CSV</a>
+            <a href="#" role="menuitem" onclick="exportData('logiciels','xlsx');return false">Excel</a>
+            <a href="#" role="menuitem" onclick="exportData('logiciels','json');return false">JSON</a>
+            <a href="#" role="menuitem" onclick="exportData('logiciels','pdf');return false">PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table-wrap" id="cat-table" aria-label="Table du catalogue logiciels"></div>
+    <div id="cat-pagination-bottom" class="pagination-bar" style="display:flex;justify-content:center;align-items:center;gap:8px;padding:8px 0">
+      <button class="btn btn-ghost btn-sm" id="cat-prev-bottom" onclick="goToPage(currentPage-1)" disabled style="padding:2px 10px;font-size:11px">◀ Précédent</button>
+      <span id="cat-page-info-bottom" style="font-size:12px;color:var(--text-muted)">Page 1 / 1</span>
+      <button class="btn btn-ghost btn-sm" id="cat-next-bottom" onclick="goToPage(currentPage+1)" disabled style="padding:2px 10px;font-size:11px">Suivant ▶</button>
+    </div>
+  </section>
+
+  <!-- MACHINES -->
+  <section id="pane-machines" class="tab-pane" role="region" aria-label="Inventaire machines">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Machines</h2>
+        <p class="pane-subtitle">Inventaire complet des postes, serveurs et équipements</p>
+      </div>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Filtres machines">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="mach-search" type="search" placeholder="Nom, IP, utilisateur..." oninput="filterMachines()" aria-label="Rechercher une machine" style="width:240px">
+        </div>
+        <select class="filter-select" id="mach-os" onchange="filterMachines()" aria-label="Filtrer par système d'exploitation"><option value="">Tous OS</option></select>
+        <select class="filter-select" id="mach-risk" onchange="filterMachines()" aria-label="Filtrer par niveau de risque">
+          <option value="">Tous niveaux</option>
+          <option value="critique">Avec critiques</option>
+          <option value="eol">Avec EOL</option>
+          <option value="sain">Sains</option>
+        </select>
+        <button class="btn btn-primary btn-sm" onclick="showMachineForm(null)" aria-label="Ajouter une machine" style="padding:4px 10px;font-size:11px;white-space:nowrap">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Ajouter
+        </button>
+      </div>
+      <div class="toolbar-right">
+        <span id="mach-count" class="record-count" aria-live="polite" aria-label="Nombre de machines"></span>
+        <div class="export-dropdown">
+          <button class="btn btn-ghost btn-sm" onclick="toggleExport('mach')" aria-label="Exporter les machines" aria-haspopup="true">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Exporter
+          </button>
+          <div class="export-menu" id="export-menu-mach" role="menu">
+            <a href="#" role="menuitem" onclick="exportData('machines','csv');return false">CSV</a>
+            <a href="#" role="menuitem" onclick="exportData('machines','xlsx');return false">Excel</a>
+            <a href="#" role="menuitem" onclick="exportData('machines','json');return false">JSON</a>
+            <a href="#" role="menuitem" onclick="exportData('machines','pdf');return false">PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table-wrap" id="mach-table" aria-label="Table des machines"></div>
+  </section>
+
+  <!-- VULNERABILITES -->
+  <section id="pane-vulnerabilites" class="tab-pane" role="region" aria-label="Gestion des vulnérabilités">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Vulnérabilités</h2>
+        <p class="pane-subtitle">CVE, scores CVSS, exploitation et surface d'attaque</p>
+      </div>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Filtres vulnérabilités">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="vuln-search" type="search" placeholder="Filtrer par logiciel..." oninput="filterVulns()" aria-label="Rechercher une vulnérabilité" style="width:280px">
+        </div>
+        <select class="filter-select" id="vuln-level" onchange="filterVulns()" aria-label="Filtrer par niveau de sévérité">
+          <option value="">Tous niveaux</option>
+          <option value="Critique">🔴 Critique</option>
+          <option value="Eleve">🟠 Élevé</option>
+          <option value="Moyen">🟡 Moyen</option>
+        </select>
+      </div>
+      <div class="toolbar-right">
+        <span id="vuln-count" class="record-count" aria-live="polite" aria-label="Nombre de vulnérabilités"></span>
+        <div class="export-dropdown">
+          <button class="btn btn-ghost btn-sm" onclick="toggleExport('vuln')" aria-label="Exporter les vulnérabilités" aria-haspopup="true">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Exporter
+          </button>
+          <div class="export-menu" id="export-menu-vuln" role="menu">
+            <a href="#" role="menuitem" onclick="exportData('vulnerabilites','csv');return false">CSV</a>
+            <a href="#" role="menuitem" onclick="exportData('vulnerabilites','xlsx');return false">Excel</a>
+            <a href="#" role="menuitem" onclick="exportData('vulnerabilites','json');return false">JSON</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table-wrap" id="vuln-table" aria-label="Table des vulnérabilités"></div>
+  </section>
+
+  <!-- LICENCES -->
+  <section id="pane-licences" class="tab-pane" role="region" aria-label="Gestion des licences">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Licences</h2>
+        <p class="pane-subtitle">Gestion et conformité des licences logicielles</p>
+      </div>
+      <div class="pane-title-actions">
+        <button class="btn btn-primary btn-sm" onclick="showLicenceForm(null)" aria-label="Ajouter une nouvelle licence">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Ajouter une licence
+        </button>
+      </div>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Filtres licences">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="lic-search" type="search" placeholder="Application..." oninput="filterLicencesApp()" aria-label="Rechercher une licence" style="width:200px">
+        </div>
+        <select class="search-input filter-select" id="lic-cat-filter" onchange="filterLicencesApp()" aria-label="Filtrer par type de licence" style="width:180px">
+          <option value="">Toutes licences</option>
+          <option value="Open Source">Open Source</option>
+          <option value="Freeware">Freeware</option>
+          <option value="Payant">Payant</option>
+          <option value="Freemium">Freemium</option>
+          <option value="Inclus Windows">Inclus Windows</option>
+          <option value="Essai">Essai</option>
+          <option value="Donationware">Donationware</option>
+          <option value="Adware">Adware</option>
+          <option value="Abandonware">Abandonware</option>
+          <option value="Inconnu">Inconnu</option>
+        </select>
+        <select class="search-input filter-select" id="lic-ed-filter" onchange="filterLicencesApp()" aria-label="Filtrer par éditeur" style="width:160px">
+          <option value="">Tous éditeurs</option>
+        </select>
+      </div>
+      <div class="toolbar-right">
+        <div class="export-dropdown">
+          <button class="btn btn-ghost btn-sm" onclick="toggleExport('lic')" aria-label="Exporter les licences" aria-haspopup="true">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Exporter
+          </button>
+          <div class="export-menu" id="export-menu-lic" role="menu">
+            <a href="#" role="menuitem" onclick="exportData('licences','csv');return false">CSV</a>
+            <a href="#" role="menuitem" onclick="exportData('licences','xlsx');return false">Excel</a>
+            <a href="#" role="menuitem" onclick="exportData('licences','json');return false">JSON</a>
+            <a href="#" role="menuitem" onclick="exportData('licences','pdf');return false">PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-grid" id="lic-kpi" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr));margin-bottom:16px" aria-label="KPIs licences"></div>
+    <div class="table-wrap" id="lic-table" aria-label="Table des licences"></div>
+  </section>
+
+  <!-- CONFORMITE ANSSI -->
+  <section id="pane-conformite" class="tab-pane" role="region" aria-label="Conformité ANSSI">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Conformité ANSSI</h2>
+        <p class="pane-subtitle">Évaluation des règles de sécurité et recommandations</p>
+      </div>
+    </div>
+    <div class="conformite-layout">
+      <div class="panel conformite-score-panel">
+        <div class="panel-title">Score Global</div>
+        <div class="score-ring-wrap" aria-label="Score de conformité ANSSI">
+          <div class="score-ring-display">
+            <div class="score-ring-val" id="conf-score-val">--</div>
+            <div class="score-ring-unit">/100</div>
+          </div>
+          <div class="score-ring-lbl">Conformité ANSSI</div>
+          <div id="conf-score-detail" class="score-ring-detail" aria-live="polite"></div>
+        </div>
+        <div id="conf-domaines" class="domaines-list"></div>
+        <div class="compliance-badges">
+          <div class="compliance-badge-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            ANSSI
+          </div>
+          <div class="compliance-badge-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            NIS2
+          </div>
+        </div>
+      </div>
+      <div class="panel conformite-rules-panel">
+        <div class="panel-title">Règles de Conformité ANSSI</div>
+        <div id="conf-rules-list" aria-label="Liste des règles de conformité" aria-live="polite"></div>
+        <div id="conf-extra-rules"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITE -->
+  <section id="pane-securite" class="tab-pane" role="region" aria-label="Audit de sécurité">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Audit de Sécurité</h2>
+        <p class="pane-subtitle">CVE + CISA KEV + versions obsolètes — comme npm audit</p>
+      </div>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Actions audit sécurité">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="sec-search" type="search" placeholder="Logiciel..." oninput="filterSecAudit()" aria-label="Rechercher" style="width:160px">
+        </div>
+        <select class="filter-select" id="sec-filter-risk" onchange="filterSecAudit()" aria-label="Niveau risque">
+          <option value="">Tous risques</option>
+          <option value="Critique">Critique</option>
+          <option value="Eleve">Élevé</option>
+          <option value="Moyen">Moyen</option>
+          <option value="Faible">Faible</option>
+        </select>
+        <select class="filter-select" id="sec-filter-cisa" onchange="filterSecAudit()" aria-label="CISA KEV">
+          <option value="">CISA KEV</option>
+          <option value="oui">Oui</option>
+          <option value="non">Non</option>
+        </select>
+        <button class="btn btn-ghost btn-sm" onclick="runBatchEnrich()" title="Enrichir CVE + versions (NVD, CISA KEV, MSRC, Winget)" style="padding:4px 10px;font-size:11px;white-space:nowrap">Enrichir CVE</button>
+      </div>
+      <div class="toolbar-right">
+        <span id="sec-count" class="record-count" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="stats-grid" id="sec-kpi" style="grid-template-columns:repeat(auto-fill,minmax(150px,1fr));margin-bottom:16px" aria-label="KPIs sécurité"></div>
+    <div class="table-wrap" id="sec-table" aria-label="Table d'audit sécurité"></div>
+  </section>
+
+
+
+  <!-- DROITS -->
+  <section id="pane-droits" class="tab-pane" role="region" aria-label="Revue des droits">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Revue des Droits</h2>
+        <p class="pane-subtitle">Utilisateurs, accès et privilèges sur les machines</p>
+      </div>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Filtres droits">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="droits-search" type="search" placeholder="Machine, utilisateur..." oninput="filterDroits()" aria-label="Rechercher" style="width:220px">
+        </div>
+        <select class="filter-select" id="droits-domaine" onchange="loadDroits()" aria-label="Filtrer par domaine">
+          <option value="">Tous domaines</option>
+          <option value="WORKGROUP">WORKGROUP</option>
+          <option value="DOMAINE">Domaine</option>
+        </select>
+        <select class="filter-select" id="droits-actif" onchange="loadDroits()" aria-label="Filtrer par statut">
+          <option value="">Tous statuts</option>
+          <option value="1">Actifs</option>
+          <option value="0">Inactifs</option>
+        </select>
+        <select class="filter-select" id="droits-niveau" onchange="filterDroits()" aria-label="Filtrer par niveau">
+          <option value="">Tous niveaux</option>
+          <option value="Windows Base">Windows Base</option>
+          <option value="Installé par Administrateur">Installé par Administrateur</option>
+          <option value="Installé par Utilisateur courant">Installé par Utilisateur courant</option>
+          <option value="Utilisateur">Utilisateur</option>
+        </select>
+        <select class="filter-select" id="droits-metier" onchange="filterDroits()" aria-label="Filtrer par metier">
+          <option value="">Tous metiers</option>
+          <option value="Bureautique">Bureautique</option>
+          <option value="Developpement">Developpement</option>
+          <option value="Securite">Securite</option>
+          <option value="Multimedia">Multimedia</option>
+          <option value="Reseau">Reseau</option>
+          <option value="BaseDonnees">BaseDonnees</option>
+          <option value="Systeme">Systeme</option>
+          <option value="Utilitaire">Utilitaire</option>
+          <option value="Design">Design</option>
+          <option value="Communication">Communication</option>
+          <option value="Finance">Finance</option>
+          <option value="Autre">Autre</option>
+          <option value="Non classe">Non classe</option>
+        </select>
+      </div>
+      <div class="toolbar-right">
+        <span id="droits-count" class="record-count" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="table-wrap" id="droits-table" aria-label="Table des droits"></div>
+  </section>
+
+  <!-- DROITS LOGICIELS -->
+  <section id="pane-droits-logiciels" class="tab-pane" role="region" aria-label="Droits par logiciel">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Droits Logiciels</h2>
+        <p class="pane-subtitle">Tous les logiciels inventoriés avec leur niveau de privilège sur chaque machine</p>
+      </div>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Filtres droits logiciels">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="dl-search" type="search" placeholder="Logiciel, éditeur..." oninput="filterDroitsLogiciels()" aria-label="Rechercher" style="width:220px">
+        </div>
+        <select class="filter-select" id="dl-niveau" onchange="filterDroitsLogiciels()" aria-label="Filtrer par niveau">
+          <option value="">Tous niveaux</option>
+          <option value="Windows Base">Windows Base</option>
+          <option value="Installé par Administrateur">Installé par Administrateur</option>
+          <option value="Installé par Utilisateur courant">Installé par Utilisateur courant</option>
+          <option value="Utilisateur">Utilisateur</option>
+        </select>
+        <select class="filter-select" id="dl-metier" onchange="filterDroitsLogiciels()" aria-label="Filtrer par metier">
+          <option value="">Tous metiers</option>
+          <option value="Bureautique">Bureautique</option>
+          <option value="Developpement">Developpement</option>
+          <option value="Securite">Securite</option>
+          <option value="Multimedia">Multimedia</option>
+          <option value="Reseau">Reseau</option>
+          <option value="BaseDonnees">BaseDonnees</option>
+          <option value="Systeme">Systeme</option>
+          <option value="Utilitaire">Utilitaire</option>
+          <option value="Design">Design</option>
+          <option value="Communication">Communication</option>
+          <option value="Finance">Finance</option>
+        </select>
+      </div>
+      <div class="toolbar-right">
+        <span id="dl-count" class="record-count" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="table-wrap" id="dl-table" aria-label="Table des droits logiciels"></div>
+  </section>
+
+  <!-- HISTORIQUE -->
+  <section id="pane-historique" class="tab-pane" role="region" aria-label="Historique des événements">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Historique</h2>
+        <p class="pane-subtitle">Journal d'événements, installations, mises à jour et scans</p>
+      </div>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Filtres historique">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="hist-pc" type="search" placeholder="Machine..." oninput="loadHistorique()" aria-label="Filtrer par machine" style="width:180px">
+        </div>
+        <div class="search-input-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="hist-sw" type="search" placeholder="Logiciel..." oninput="loadHistorique()" aria-label="Filtrer par logiciel" style="width:180px">
+        </div>
+        <select class="filter-select" id="hist-type" onchange="loadHistorique()" aria-label="Filtrer par type d'événement">
+          <option value="">Tous types</option>
+          <option value="installation">Installation</option>
+          <option value="desinstallation">Désinstallation</option>
+          <option value="mise_a_jour">Mise à jour</option>
+          <option value="scan_complete">Scan complet</option>
+        </select>
+      </div>
+    </div>
+    <div class="panel">
+      <div id="hist-list" aria-label="Liste des événements historiques" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- STATISTIQUES -->
+  <section id="pane-statistiques" class="tab-pane" role="region" aria-label="Statistiques et analytiques">
+    <div class="pane-hero">
+      <div class="pane-title-wrap">
+        <h2 class="pane-title">Statistiques</h2>
+        <p class="pane-subtitle">Analyses de déploiement, vulnérabilités et tendances du parc</p>
+      </div>
+    </div>
+    <div class="stats-quad-grid">
+      <div class="panel">
+        <div class="panel-title">Top 20 — Logiciels les plus déployés</div>
+        <div id="stat-top-utilises" aria-label="Top logiciels les plus utilisés" aria-live="polite"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Top 20 — Logiciels les plus vulnérables</div>
+        <div id="stat-top-vuln" aria-label="Top logiciels vulnérables" aria-live="polite"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Top 20 — Logiciels obsolètes / EOL</div>
+        <div id="stat-top-obs" aria-label="Top logiciels obsolètes EOL" aria-live="polite"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">Logiciels avec plusieurs versions</div>
+        <div id="stat-multi-ver" aria-label="Logiciels multi-versions" aria-live="polite"></div>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <div class="panel-title">Évolution du parc dans le temps</div>
+      <div id="stat-evolution" class="evolution-chart" aria-label="Évolution temporelle du parc" aria-live="polite"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     DRAWERS
+════════════════════════════════════════════════════════════════════════ -->
+
+<!-- Machine Drawer -->
+<div class="overlay" id="overlay-machine" onclick="closeDrawer('machine')" role="presentation" aria-hidden="true"></div>
+<aside class="drawer" id="drawer-machine" role="dialog" aria-label="Détails machine" aria-modal="true">
+  <div class="drawer-header">
+    <div class="drawer-header-info">
+      <div class="drawer-machine-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+      </div>
+      <div>
+        <div class="drawer-title" id="dm-title">Machine</div>
+        <div class="drawer-sub" id="dm-sub"></div>
+      </div>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn btn-ghost btn-sm" onclick="showMachineForm(currentScanId)" style="padding:4px 8px;font-size:11px;white-space:nowrap">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+        Modifier
+      </button>
+      <button class="icon-btn" onclick="closeDrawer('machine')" aria-label="Fermer le panneau machine">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="inner-tabs" role="tablist" aria-label="Onglets machine">
+    <button class="inner-tab active" role="tab" aria-selected="true" data-itab="dm-info" data-drawer="machine" aria-controls="dm-info">Système</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dm-securite" data-drawer="machine" aria-controls="dm-securite">Sécurité</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dm-logiciels" data-drawer="machine" aria-controls="dm-logiciels">Logiciels</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dm-reseau" data-drawer="machine" aria-controls="dm-reseau">Réseau</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dm-processus" data-drawer="machine" aria-controls="dm-processus">Processus</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dm-persistance" data-drawer="machine" aria-controls="dm-persistance">Persistance</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dm-historique" data-drawer="machine" aria-controls="dm-historique">Historique</button>
+  </div>
+  <div class="drawer-body" id="dm-body">
+    <div id="dm-info" class="inner-pane active" role="tabpanel" aria-label="Informations système"></div>
+    <div id="dm-securite" class="inner-pane" role="tabpanel" aria-label="Informations sécurité"></div>
+    <div id="dm-logiciels" class="inner-pane" role="tabpanel" aria-label="Logiciels installés"></div>
+    <div id="dm-reseau" class="inner-pane" role="tabpanel" aria-label="Informations réseau"></div>
+    <div id="dm-processus" class="inner-pane" role="tabpanel" aria-label="Processus en cours"></div>
+    <div id="dm-persistance" class="inner-pane" role="tabpanel" aria-label="Éléments de persistance"></div>
+    <div id="dm-historique" class="inner-pane" role="tabpanel" aria-label="Historique des scans"></div>
+  </div>
+</aside>
+
+<!-- Machine Edit Drawer -->
+<div class="overlay" id="overlay-machine-edit" onclick="closeDrawer('machine-edit')" role="presentation" aria-hidden="true"></div>
+<aside class="drawer" id="drawer-machine-edit" role="dialog" aria-label="Édition machine" aria-modal="true">
+  <div class="drawer-header">
+    <div class="drawer-header-info">
+      <div class="drawer-machine-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+      </div>
+      <div>
+        <div class="drawer-title" id="dme-title">Ajouter une machine</div>
+        <div class="drawer-sub" id="dme-sub">Renseignez les informations de la machine</div>
+      </div>
+    </div>
+    <div class="drawer-actions">
+      <button class="icon-btn" onclick="closeDrawer('machine-edit')" aria-label="Fermer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="drawer-body" id="dme-body"></div>
+</aside>
+
+<!-- Software Drawer -->
+<div class="overlay" id="overlay-sw" onclick="closeDrawer('sw')" role="presentation" aria-hidden="true"></div>
+<aside class="drawer" id="drawer-sw" role="dialog" aria-label="Détails logiciel" aria-modal="true">
+  <div class="drawer-header">
+    <div class="drawer-header-info">
+      <div class="drawer-sw-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      </div>
+      <div>
+        <div class="drawer-title" id="dsw-title">Logiciel</div>
+        <div class="drawer-sub" id="dsw-sub"></div>
+      </div>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn btn-ghost btn-sm" id="btn-enrich-cve" aria-label="Enrichir les données CVE depuis NVD, CISA et MSRC">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Enrichir CVE
+      </button>
+      <button class="icon-btn" onclick="closeDrawer('sw')" aria-label="Fermer le panneau logiciel">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="inner-tabs" role="tablist" aria-label="Onglets logiciel">
+    <button class="inner-tab active" role="tab" aria-selected="true" data-itab="dsw-gouvernance" data-drawer="sw" aria-controls="dsw-gouvernance">Gouvernance</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dsw-inventaire" data-drawer="sw" aria-controls="dsw-inventaire">Inventaire</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dsw-droits" data-drawer="sw" aria-controls="dsw-droits">Droits</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dsw-securite" data-drawer="sw" aria-controls="dsw-securite">Sécurité</button>
+    <button class="inner-tab" role="tab" aria-selected="false" data-itab="dsw-technique" data-drawer="sw" aria-controls="dsw-technique">Technique</button>
+  </div>
+  <div class="drawer-body">
+    <div id="dsw-gouvernance" class="inner-pane active" role="tabpanel" aria-label="Gouvernance du logiciel"></div>
+    <div id="dsw-inventaire" class="inner-pane" role="tabpanel" aria-label="Inventaire des installations"></div>
+    <div id="dsw-droits" class="inner-pane" role="tabpanel" aria-label="Droits et permissions du logiciel"></div>
+    <div id="dsw-securite" class="inner-pane" role="tabpanel" aria-label="Informations de sécurité CVE"></div>
+    <div id="dsw-technique" class="inner-pane" role="tabpanel" aria-label="Informations techniques"></div>
+  </div>
+</aside>
+
+<!-- Licence Drawer -->
+<div class="overlay" id="overlay-licence" onclick="closeDrawer('licence')" role="presentation" aria-hidden="true"></div>
+<aside class="drawer" id="drawer-licence" role="dialog" aria-label="Gestion licence" aria-modal="true">
+  <div class="drawer-header">
+    <div class="drawer-header-info">
+      <div class="drawer-lic-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      </div>
+      <div>
+        <div class="drawer-title" id="dlic-title">Licence</div>
+        <div class="drawer-sub">Gestion des licences logicielles</div>
+      </div>
+    </div>
+    <div class="drawer-actions">
+      <button class="icon-btn" onclick="closeDrawer('licence')" aria-label="Fermer le panneau licence">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="drawer-body" id="dlic-body"></div>
+</aside>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     NOTIFICATION TOAST
+════════════════════════════════════════════════════════════════════════ -->
+<div id="toast-container" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+<script src="app.js"></script>
+<script>
+// ─── Theme toggle ──────────────────────────────────────────────────────────────
+function toggleTheme() {
+  const root = document.getElementById('app-root');
+  const isDark = root.classList.contains('theme-dark');
+  root.classList.toggle('theme-dark', !isDark);
+  root.classList.toggle('theme-light', isDark);
+  document.getElementById('theme-icon-dark').style.display = isDark ? 'none' : '';
+  document.getElementById('theme-icon-light').style.display = isDark ? '' : 'none';
+  localStorage.setItem('cp-theme', isDark ? 'light' : 'dark');
+}
+
+// Restore saved theme
+(function() {
+  const saved = localStorage.getItem('cp-theme');
+  if (saved === 'light') {
+    document.getElementById('app-root').classList.replace('theme-dark', 'theme-light');
+    document.getElementById('theme-icon-dark').style.display = 'none';
+    document.getElementById('theme-icon-light').style.display = '';
+  }
+})();
+
+// ─── Sidebar toggle ────────────────────────────────────────────────────────────
+const sidebarToggle = document.getElementById('sidebar-toggle');
+const sidebar = document.getElementById('sidebar');
+const mainContent = document.getElementById('main-content');
+let sidebarOpen = true;
+
+sidebarToggle.addEventListener('click', () => {
+  sidebarOpen = !sidebarOpen;
+  sidebar.classList.toggle('collapsed', !sidebarOpen);
+  mainContent.classList.toggle('sidebar-collapsed', !sidebarOpen);
+  sidebarToggle.setAttribute('aria-expanded', sidebarOpen);
+});
+
+// ─── Navigation ───────────────────────────────────────────────────────────────
+const navLabels = {
+  'dashboard': 'Vue Globale',
+  'catalogue': 'Catalogue Logiciels',
+  'machines': 'Machines',
+  'vulnerabilites': 'Vulnérabilités',
+  'licences': 'Licences',
+  'conformite': 'Conformité ANSSI',
+  'securite': 'Audit Sécurité',
+
+  'historique': 'Historique',
+  'statistiques': 'Statistiques',
+  'droits': 'Revue des Droits',
+  'droits-logiciels': 'Droits Logiciels',
+};
+
+document.querySelectorAll('.nav-item[data-tab]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.nav-item').forEach(b => {
+      b.classList.remove('active');
+      b.removeAttribute('aria-current');
+    });
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    btn.setAttribute('aria-current', 'page');
+    const tab = btn.dataset.tab;
+    const pane = document.getElementById('pane-' + tab);
+    if (pane) pane.classList.add('active');
+    document.getElementById('breadcrumb-current').textContent = navLabels[tab] || tab;
+    if (!btn.dataset.loaded) {
+      btn.dataset.loaded = '1';
+      loadTab(tab);
+    }
+  });
+});
+
+// ─── Current tab refresh ──────────────────────────────────────────────────────
+window.refreshCurrentTab = function() {
+  const active = document.querySelector('.nav-item.active[data-tab]');
+  if (active) {
+    delete active.dataset.loaded;
+    loadTab(active.dataset.tab);
+  }
+};
+
+// ─── Keyboard shortcut Ctrl+K ─────────────────────────────────────────────────
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+    e.preventDefault();
+    document.getElementById('global-search').focus();
+  }
+  if (e.key === 'Escape') {
+    document.getElementById('search-results-dropdown').classList.remove('visible');
+    document.getElementById('global-search').blur();
+  }
+});
+
+// ─── Progress bar utility ─────────────────────────────────────────────────────
+window.makeProgressBar = function(pct, color) {
+  return `<div class="progress-bar" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100" aria-label="${pct}% utilisé">
+    <div class="progress-fill" style="width:${Math.min(100,pct)}%;background:${color||'var(--accent)'}"></div>
+  </div>`;
+};
+</script>
+</body>
+</html>

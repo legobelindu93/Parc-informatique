@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets / configuration locale
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Bases de donnees locales
+*.db
+*.db-shm
+*.db-wal
+
+# Donnees sensibles (PII / inventaires de parc)
+inventaire_*.json
+AppInvRawData_trie.csv

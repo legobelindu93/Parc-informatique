@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Collecte — Parc Informatique</title>
+<style>
+:root{--bg:#0f1117;--surface:#1a1d27;--surface-2:#22263a;--border:#2a2e3f;--text:#e4e7ee;--text-2:#9ca3b5;--accent:#4f8cff;--success:#34d399;--radius:6px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:14px;line-height:1.5;padding:32px}
+h1{font-size:22px;font-weight:700;margin-bottom:4px}
+h1 span{color:var(--accent)}
+.sub{color:var(--text-2);font-size:13px;margin-bottom:24px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px}
+.card h2{font-size:15px;font-weight:600;margin-bottom:12px;color:var(--accent)}
+.card p{color:var(--text-2);font-size:13px;margin-bottom:12px;line-height:1.6}
+code{background:var(--surface-2);padding:3px 8px;border-radius:4px;font-size:13px;color:var(--accent)}
+pre{background:var(--surface-2);padding:16px;border-radius:var(--radius);border:1px solid var(--border);overflow-x:auto;font-size:13px;line-height:1.6;margin:8px 0}
+pre .cmd{color:var(--success)}
+pre .url{color:var(--accent)}
+.btn{padding:8px 20px;border-radius:var(--radius);font-size:12.5px;font-family:inherit;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:#fff;transition:all .12s;text-decoration:none;display:inline-block;margin:4px}
+.btn:hover{background:#3b7cff}
+.btn.secondary{background:transparent;color:var(--text);border-color:var(--border)}
+.btn.secondary:hover{background:var(--surface-2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.step{border-left:3px solid var(--accent);padding-left:16px;margin:12px 0}
+.step .num{font-size:11px;color:var(--text-2);font-weight:600;text-transform:uppercase}
+.step h3{font-size:14px;margin:2px 0 6px}
+.step p{font-size:13px;color:var(--text-2);margin:0}
+</style>
+</head>
+<body>
+<h1><span>Collecte</span> du parc</h1>
+<p class="sub">Déployez le collecteur sur les machines du réseau pour inventorier automatiquement</p>
+
+<div class="grid">
+  <div class="card">
+    <h2>Méthode 1 — PowerShell direct</h2>
+    <p><strong>Depuis cmd.exe (Invité de commandes) :</strong></p>
+    <pre id="cmd-ps1" style="user-select:all">powershell -NoProfile -ExecutionPolicy Bypass -Command "$env:SRV='http://<span class="url" id="srv-url-ps1">SERVEUR_IP:5000</span>'; iex (irm ($env:SRV+'/collect.ps1'))"</pre>
+    <button class="btn secondary small" id="btn-copy-ps1" onclick="copyCmd('cmd-ps1', this)">Copier</button>
+    <p><strong>Depuis PowerShell :</strong></p>
+    <pre id="cmd-ps1b" style="user-select:all">$env:SRV='http://<span class="url" id="srv-url-ps1b">SERVEUR_IP:5000</span>'; iex (irm ($env:SRV+'/collect.ps1'))</pre>
+    <button class="btn secondary small" id="btn-copy-ps1b" onclick="copyCmd('cmd-ps1b', this)">Copier</button>
+    <p style="margin-top:8px;font-size:12px;color:var(--text-2)">Le script va s'exécuter et envoyer les données automatiquement.</p>
+  </div>
+
+  <div class="card">
+    <h2>Méthode 2 — Fichier .BAT</h2>
+    <p>Téléchargez et exécutez ce fichier batch sur chaque machine :</p>
+    <pre id="cmd-bat" style="user-select:all">@echo off
+set SRV=http://<span class="url" id="srv-url-bat">SERVEUR_IP:5000</span>
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$env:SRV='%SRV%'; iex (irm ($env:SRV+'/collect.ps1'))"</pre>
+    <a class="btn secondary small" href="/collect.bat" download>Télécharger .BAT</a>
+    <p style="margin-top:8px;font-size:12px;color:var(--text-2)">Configurez la variable SRV dans le fichier avant distribution.</p>
+  </div>
+
+  <div class="card">
+    <h2>Méthode 3 — GPO / Déploiement masse</h2>
+    <p>Pour déployer via GPO, script de logon ou outil de déploiement :</p>
+    <pre id="cmd-gpo" style="user-select:all">powershell -NoProfile -ExecutionPolicy Bypass -Command "$env:SRV='http://<span class="url" id="srv-url-gpo">SERVEUR_IP:5000</span>'; iex (irm ($env:SRV+'/collect.ps1'))"</pre>
+    <p style="font-size:12px;color:var(--text-2);margin-top:4px">Vous pouvez aussi prédéfinir la variable SRV via GPO (variable d'environnement système).</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Instructions détaillées</h2>
+  <div class="step">
+    <div class="num">Étape 1</div>
+    <h3>Prérequis</h3>
+    <p>PowerShell 5.1+ sur Windows 10/11, serveur accessible depuis les clients (pare-feu ouvert port 5000).</p>
+  </div>
+  <div class="step">
+    <div class="num">Étape 2</div>
+    <h3>Remplacez l'IP du serveur</h3>
+    <p>Dans les commandes ci-dessus, remplacez <code>SERVEUR_IP</code> par l'adresse IP réelle de ce serveur.</p>
+  </div>
+  <div class="step">
+    <div class="num">Étape 3</div>
+    <h3>Exécutez sur la machine cible</h3>
+    <p>Ouvrez PowerShell en administrateur et exécutez la commande. Le collecteur va analyser la machine et envoyer le rapport.</p>
+  </div>
+  <div class="step">
+    <div class="num">Étape 4</div>
+    <h3>Vérifiez dans le dashboard</h3>
+    <p>Les données apparaîtront dans les onglets <strong>Tableau de bord</strong>, <strong>Machines</strong> et <strong>Catalogue</strong>.</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Notes de sécurité</h2>
+  <p>• Le collecteur est <strong>read-only</strong> — il ne modifie rien sur la machine cible.</p>
+  <p>• Aucune donnée personnelle n'est collectée (uniquement inventaire logiciel/matériel).</p>
+  <p>• La communication se fait en HTTP. Pour du HTTPS, placez un reverse proxy (Nginx, Caddy).</p>
+  <p>• Les machines doivent pouvoir joindre le port 5000 du serveur.</p>
+  <a class="btn" href="/">&larr; Retour au dashboard</a>
+</div>
+
+<script>
+const srvUrl = window.location.origin;
+['srv-url-ps1','srv-url-ps1b','srv-url-bat','srv-url-gpo'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.textContent = srvUrl.replace(/^https?:\/\//,'');
+});
+
+function copyCmd(id, btn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const text = el.textContent.replace(/[ \t]+/g, ' ').trim();
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = 'Copié !';
+    setTimeout(() => btn.textContent = orig, 2000);
+  });
+}
+</script>
+</body>
+</html>

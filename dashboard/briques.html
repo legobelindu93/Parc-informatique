@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briques Logicielles — Cyber Parc</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { padding: 0; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+    .briques-header { display:flex; align-items:center; gap:12px; padding:12px 20px; background:var(--surface); border-bottom:1px solid var(--border); }
+    .briques-header h1 { font-size:16px; font-weight:600; margin:0; flex:1; }
+    .briques-header .back-link { font-size:12px; color:var(--accent); text-decoration:none; }
+    .briques-header .back-link:hover { text-decoration:underline; }
+    .briques-header .icon-btn { background:none; border:1px solid var(--border); border-radius:6px; padding:6px; cursor:pointer; color:var(--text); display:flex; align-items:center; justify-content:center; }
+    .briques-header .icon-btn:hover { background:var(--bg-subtle); }
+    .briques-main { flex:1; padding:16px 20px; overflow:auto; }
+    #briques-table td, #briques-table th { white-space:nowrap; }
+    .brique-detail-cell { font-size:10px; color:var(--text-muted); }
+  </style>
+</head>
+<body>
+  <header class="briques-header">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+    <h1>Briques Logicielles</h1>
+    <span style="font-size:12px;color:var(--text-muted)">Socle applicatif : logiciels, SaaS, APIs, frameworks, librairies, bases de données...</span>
+    <a class="back-link" href="/">&larr; Retour au tableau de bord</a>
+    <button class="icon-btn" onclick="toggleTheme()" title="Changer le thème" aria-label="Thème clair/sombre">
+      <svg id="theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </header>
+
+  <main class="briques-main">
+    <div class="toolbar" role="toolbar">
+      <div class="toolbar-left">
+        <div class="search-input-wrap">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input class="search-input" id="briques-search" type="search" placeholder="Rechercher..." oninput="filterBriques()" style="width:180px">
+        </div>
+        <select class="filter-select" id="briques-filter-type" onchange="filterBriques()">
+          <option value="">Tous types</option>
+        </select>
+        <select class="filter-select" id="briques-filter-statut" onchange="filterBriques()">
+          <option value="">Tous statuts</option>
+        </select>
+        <button class="btn btn-ghost btn-sm" onclick="showBriqueForm()" style="padding:4px 10px;font-size:11px">+ Nouvelle brique</button>
+        <button class="btn btn-ghost btn-sm" onclick="document.getElementById('brique-import-file').click()" style="padding:4px 10px;font-size:11px">Importer JSON</button>
+        <input type="file" id="brique-import-file" accept=".json" style="display:none" onchange="importBriquesJson(event)">
+        <button class="btn btn-ghost btn-sm" onclick="exportBriquesJson()" style="padding:4px 10px;font-size:11px">Exporter JSON</button>
+      </div>
+      <div class="toolbar-right">
+        <span id="briques-count" class="record-count"></span>
+      </div>
+    </div>
+
+    <div class="stats-grid" id="briques-kpi" style="grid-template-columns:repeat(auto-fill,minmax(140px,1fr));margin-bottom:12px"></div>
+    <div class="table-wrap" id="briques-table"><div class="empty-state">Chargement...</div></div>
+  </main>
+
+  <!-- DRAWER -->
+  <div class="drawer-overlay" id="brique-drawer-overlay" onclick="closeBriqueDrawer()"></div>
+  <div class="drawer" id="brique-drawer" role="dialog" aria-modal="true">
+    <div class="drawer-header">
+      <div class="drawer-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      </div>
+      <div>
+        <div class="drawer-title" id="brique-drawer-title">Nouvelle brique</div>
+        <div class="drawer-sub" id="brique-drawer-sub">Ajouter un composant du socle applicatif</div>
+      </div>
+      <button class="drawer-close" onclick="closeBriqueDrawer()">&times;</button>
+    </div>
+    <div class="drawer-body" style="overflow-y:auto;max-height:calc(100vh - 120px)">
+      <div id="brique-detail-view" style="display:none"></div>
+      <div id="brique-form-view">
+      <input type="hidden" id="brique-id">
+
+      <datalist id="list-type">
+        <option value="API"></option>
+        <option value="Framework"></option>
+        <option value="SaaS"></option>
+        <option value="Bibliothèque"></option>
+        <option value="Application Web"></option>
+        <option value="Application Client Lourd"></option>
+        <option value="Base de données"></option>
+      </datalist>
+      <datalist id="list-editeur">
+        <option value="Adobe"></option>
+        <option value="Amazon Web Services (AWS)"></option>
+        <option value="Apache Software Foundation"></option>
+        <option value="Apple"></option>
+        <option value="Atlassian"></option>
+        <option value="Autodesk"></option>
+        <option value="Broadcom"></option>
+        <option value="Canonical"></option>
+        <option value="Canva"></option>
+        <option value="Check Point"></option>
+        <option value="Cisco"></option>
+        <option value="Cloud Native Computing Foundation (CNCF)"></option>
+        <option value="Cloudflare"></option>
+        <option value="CrowdStrike"></option>
+        <option value="Dassault Systèmes"></option>
+        <option value="Databricks"></option>
+        <option value="Datadog"></option>
+        <option value="Docker Inc."></option>
+        <option value="Dropbox"></option>
+        <option value="Eclipse Foundation"></option>
+        <option value="Fortinet"></option>
+        <option value="GitHub"></option>
+        <option value="GitLab"></option>
+        <option value="Google"></option>
+        <option value="HashiCorp"></option>
+        <option value="HubSpot"></option>
+        <option value="IBM"></option>
+        <option value="Intuit"></option>
+        <option value="JetBrains"></option>
+        <option value="Kaspersky"></option>
+        <option value="Linux Foundation"></option>
+        <option value="McAfee"></option>
+        <option value="Microsoft"></option>
+        <option value="Mozilla Foundation"></option>
+        <option value="Netlify"></option>
+        <option value="Nginx Inc."></option>
+        <option value="Node.js Foundation"></option>
+        <option value="OpenJS Foundation"></option>
+        <option value="Oracle"></option>
+        <option value="Palo Alto Networks"></option>
+        <option value="PHP Group"></option>
+        <option value="PostgreSQL Global Development Group"></option>
+        <option value="Python Software Foundation"></option>
+        <option value="Red Hat"></option>
+        <option value="Salesforce"></option>
+        <option value="SAP"></option>
+        <option value="ServiceNow"></option>
+        <option value="Slack Technologies"></option>
+        <option value="Sophos"></option>
+        <option value="Splunk"></option>
+        <option value="The Document Foundation"></option>
+        <option value="Trend Micro"></option>
+        <option value="Vercel"></option>
+        <option value="VMware"></option>
+        <option value="Workday"></option>
+        <option value="Zoom"></option>
+      </datalist>
+      <datalist id="list-pays">
+        <option value="États-Unis"></option>
+        <option value="France"></option>
+        <option value="Union Européenne"></option>
+        <option value="Royaume-Uni"></option>
+        <option value="Chine"></option>
+      </datalist>
+      <datalist id="list-licence">
+        <option value="MIT"></option>
+        <option value="GPL"></option>
+        <option value="Apache 2.0"></option>
+        <option value="BSD"></option>
+        <option value="Propriétaire"></option>
+        <option value="Open Source"></option>
+      </datalist>
+      <datalist id="list-cout">
+        <option value="Gratuit"></option>
+        <option value="Gratuit (Open Source)"></option>
+        <option value="Freemium"></option>
+        <option value="Payant"></option>
+        <option value="Payant (Abonnement)"></option>
+        <option value="Payant (Licence perpétuelle)"></option>
+      </datalist>
+      <datalist id="list-statut">
+        <option value="Actif"></option>
+        <option value="Maintenu"></option>
+        <option value="Déprécié"></option>
+        <option value="Archivé"></option>
+      </datalist>
+      <datalist id="list-service">
+        <option value="DSI"></option>
+        <option value="Marketing"></option>
+        <option value="RH"></option>
+        <option value="Finance"></option>
+        <option value="Direction"></option>
+      </datalist>
+      <datalist id="list-tags">
+        <option value="auth"></option>
+        <option value="monitoring"></option>
+        <option value="base-de-donnees"></option>
+        <option value="securite"></option>
+        <option value="frontend"></option>
+        <option value="backend"></option>
+      </datalist>
+      <datalist id="list-vuln-statut">
+        <option value="Aucune CVE connue"></option>
+        <option value="Vulnerabilite connue"></option>
+        <option value="Non evalue"></option>
+      </datalist>
+
+      <div class="form-row">
+        <div class="form-group" style="flex:2">
+          <label class="form-label">Nom *</label>
+          <input class="form-input" id="brique-nom" placeholder="Ex: PostgreSQL 16" oninput="document.getElementById('brique-drawer-sub').textContent=this.value||'Ajouter un composant'">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Type</label>
+          <input class="form-input" id="brique-type" list="list-type" placeholder="Ex: API, Framework, SaaS, Bibliothèque...">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Description</label>
+        <textarea class="form-input" id="brique-description" rows="2" placeholder="Rôle principal de la technologie..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Éditeur / Mainteneur</label>
+          <input class="form-input" id="brique-editeur" list="list-editeur" placeholder="Ex: Microsoft, PostgreSQL Global Development Group">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Pays d'origine</label>
+          <input class="form-input" id="brique-pays" list="list-pays" placeholder="Ex: États-Unis, France">
+        </div>
+        <div class="form-group" style="flex:1" style="max-width:100px">
+          <label class="form-label">Année création</label>
+          <input class="form-input" id="brique-annee" placeholder="Ex: 1996">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Version actuelle</label>
+          <input class="form-input" id="brique-version-actuelle" placeholder="Dernière version stable disponible">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Version utilisée</label>
+          <input class="form-input" id="brique-version-utilisee" placeholder="Version utilisée dans le projet">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Licence</label>
+          <input class="form-input" id="brique-licence" list="list-licence" placeholder="Ex: MIT, GPL, Apache 2.0, Propriétaire">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Coût</label>
+          <input class="form-input" id="brique-cout" list="list-cout" placeholder="Ex: Gratuit, Payant, Freemium, Abonnement">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Statut</label>
+          <input class="form-input" id="brique-statut" list="list-statut" placeholder="Ex: Actif, Maintenu, Déprécié, Archivé">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Requires WP</label>
+          <input class="form-input" id="brique-requires-wp" placeholder="Ex: 6.0">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Requires PHP</label>
+          <input class="form-input" id="brique-requires-php" placeholder="Ex: 7.4">
+        </div>
+        <div class="form-group" style="flex:2">
+          <label class="form-label">Requires Plugins</label>
+          <input class="form-input" id="brique-requires-plugins" placeholder="Slug plugin(s) séparés par virgule">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Site officiel</label>
+          <input class="form-input" id="brique-editeur-url" placeholder="https://...">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Documentation</label>
+          <input class="form-input" id="brique-doc-url" placeholder="https://...">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Repository (GitHub, GitLab...)</label>
+        <input class="form-input" id="brique-repo-url" placeholder="https://github.com/...">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Responsable</label>
+          <input class="form-input" id="brique-responsable" placeholder="Nom ou équipe">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label class="form-label">Service concerné</label>
+          <input class="form-input" id="brique-service" list="list-service" placeholder="Ex: DSI, Marketing, RH">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Tags (séparés par virgule)</label>
+        <input class="form-input" id="brique-tags" list="list-tags" placeholder="Ex: auth, monitoring, base-de-donnees">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Vulnérabilités</label>
+        <input class="form-input" id="brique-vuln-statut" list="list-vuln-statut" placeholder="Statut vulnerabilite..." style="margin-bottom:6px">
+        <textarea class="form-input" id="brique-vuln-details" rows="2" placeholder="Details des CVEs connues (une par ligne) :&#10;CVE-2024-XXXXX - Description..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Notes</label>
+        <textarea class="form-input" id="brique-notes" rows="2" placeholder="Informations complémentaires..."></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-ghost" onclick="closeBriqueDrawer()">Annuler</button>
+        <button class="btn" id="brique-save-btn" onclick="saveBrique()">Enregistrer</button>
+        <button class="btn btn-danger" id="brique-delete-btn" onclick="deleteBrique()" style="display:none">Supprimer</button>
+      </div>
+      </div><!-- /brique-form-view -->
+    </div>
+  </div>
+
+  <script>
+    'use strict';
+    var API = window.location.origin;
+    var _briquesData = [];
+
+    async function api(path, options) {
+      if (!options) options = {};
+      var ctl = new AbortController();
+      var tid = setTimeout(function() { ctl.abort(); }, 30000);
+      options.signal = ctl.signal;
+      try {
+        var r = await fetch(API + path, options);
+        if (!r.ok) throw new Error(await r.text());
+        return r.json();
+      } finally { clearTimeout(tid); }
+    }
+
+    function esc(s) { return s ? String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') : ''; }
+    function jesc(s) { return s ? String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'") : ''; }
+
+    async function loadBriques() {
+      var table = document.getElementById('briques-table');
+      table.innerHTML = '<div class="loading-state"><div class="spinner"></div><span>Chargement des briques...</span></div>';
+      try {
+        _briquesData = await api('/api/briques');
+        renderBriquesKpi(_briquesData);
+        renderBriques(_briquesData);
+      } catch(e) {
+        table.innerHTML = '<div class="empty-state">Erreur : ' + esc(e.message) + '</div>';
+      }
+    }
+
+    function renderBriquesKpi(data) {
+      var total = data.length;
+      var statuts = {actif:0, maintenu:0, deprecated:0, archive:0};
+      var depsCount = 0;
+      data.forEach(function(d) {
+        var s = (d.statut||'').toLowerCase();
+        if (s === 'actif') statuts.actif++;
+        else if (s === 'maintenu') statuts.maintenu++;
+        else if (s === 'deprecated' || s === 'd\u00e9pr\u00e9ci\u00e9') statuts.deprecated++;
+        else if (s === 'archive' || s === 'archiv\u00e9') statuts.archive++;
+        if (s === 'deprecated' || s === 'd\u00e9pr\u00e9ci\u00e9' || s === 'archive' || s === 'archiv\u00e9') depsCount++;
+      });
+      document.getElementById('briques-kpi').innerHTML =
+        '<div class="stat-card"><div class="stat-val">' + total + '</div><div class="stat-lbl">Total briques</div></div>' +
+        '<div class="stat-card" style="border-left:3px solid var(--success)"><div class="stat-val" style="color:var(--success)">' + statuts.actif + '</div><div class="stat-lbl">Actif</div></div>' +
+        '<div class="stat-card" style="border-left:3px solid var(--accent)"><div class="stat-val accent">' + statuts.maintenu + '</div><div class="stat-lbl">Maintenu</div></div>' +
+        '<div class="stat-card" style="border-left:3px solid var(--warning)"><div class="stat-val" style="color:var(--warning)">' + statuts.deprecated + '</div><div class="stat-lbl">D\u00e9pr\u00e9ci\u00e9</div></div>' +
+        '<div class="stat-card" style="border-left:3px solid var(--danger)"><div class="stat-val" style="color:var(--danger)">' + statuts.archive + '</div><div class="stat-lbl">Archiv\u00e9</div></div>';
+    }
+
+    function populateFilter(selId, data, field) {
+      var sel = document.getElementById(selId);
+      if (sel.dataset.populated) return;
+      sel.dataset.populated = '1';
+      var vals = {};
+      data.forEach(function(d) { var v = (d[field]||'').trim(); if (v) vals[v] = (vals[v]||0) + 1; });
+      var sorted = Object.keys(vals).sort();
+      sorted.forEach(function(v) {
+        var opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v + ' (' + vals[v] + ')';
+        sel.appendChild(opt);
+      });
+    }
+
+    function renderVulnCell(vulnStr) {
+      if (!vulnStr) return '<span style="color:var(--text-muted)">—</span>';
+      try {
+        var v = JSON.parse(vulnStr);
+        if (!v.statut) return '<span style="color:var(--text-muted)">—</span>';
+        var color = 'var(--success)';
+        var icon = '&#x2713;';
+        if (v.statut.indexOf('Vulnerabilite') !== -1) { color = 'var(--danger)'; icon = '&#x26A0;'; }
+        else if (v.statut.indexOf('Non evalue') !== -1) { color = 'var(--warning)'; icon = '?'; }
+        var tip = v.details ? esc(v.details).replace(/\n/g, '&#10;') : '';
+        return '<span title="' + tip + '" style="color:' + color + ';font-weight:600;cursor:help">' + icon + '</span>';
+      } catch(e) {
+        return '<span style="color:var(--text-muted)">—</span>';
+      }
+    }
+
+    function renderBriques(data) {
+      var table = document.getElementById('briques-table');
+      document.getElementById('briques-count').textContent = data.length + ' brique(s)';
+
+      // populate filter dropdowns from data
+      populateFilter('briques-filter-type', data, 'type_brique');
+      populateFilter('briques-filter-statut', data, 'statut');
+      if (!data.length) {
+        table.innerHTML = '<div class="empty-state">Aucune brique r\u00e9f\u00e9renc\u00e9e. <button class="btn btn-ghost btn-sm" onclick="showBriqueForm()">+ Ajouter</button></div>';
+        return;
+      }
+      var h = '<table><thead><tr>' +
+        '<th>Nom</th><th>Type</th><th>Version</th><th>Utilis\u00e9e</th><th>Licence</th><th>Co\u00fbt</th><th>Statut</th><th>Req. WP</th><th>Req. PHP</th><th>Req. Plugins</th><th>Origine</th><th>Cr\u00e9ation</th><th>Vuln.</th><th>Resp.</th><th>Actions</th>' +
+        '</tr></thead><tbody>';
+      data.forEach(function(d) {
+        var statColor = 'var(--text-muted)';
+        var s = (d.statut||'').toLowerCase();
+        if (s === 'actif') statColor = 'var(--success)';
+        else if (s === 'maintenu') statColor = 'var(--accent)';
+        else if (s === 'deprecated' || s === 'd\u00e9pr\u00e9ci\u00e9') statColor = 'var(--warning)';
+        else if (s === 'archive' || s === 'archiv\u00e9') statColor = 'var(--danger)';
+        var lienSite = d.editeur_url ? '<a href="' + esc(d.editeur_url) + '" target="_blank" style="color:var(--accent);margin-left:4px;font-size:10px;text-decoration:none">Site</a>' : '';
+        var lienDoc = d.documentation_url ? '<a href="' + esc(d.documentation_url) + '" target="_blank" style="color:var(--accent);margin-left:4px;font-size:10px;text-decoration:none">Doc</a>' : '';
+        var lienRepo = d.repository_url ? '<a href="' + esc(d.repository_url) + '" target="_blank" style="color:var(--accent);margin-left:4px;font-size:10px;text-decoration:none">Repo</a>' : '';
+        h += '<tr>' +
+          '<td style="font-weight:500;cursor:pointer" onclick="showBriqueDetail(' + d.id + ')" title="Voir les d\u00e9tails">' + esc(d.nom) +
+            '<br><span style="font-size:9px;color:var(--text-muted)">' + esc(d.editeur) + ' ' + lienSite + lienDoc + lienRepo + '</span>' +
+            (d.description ? '<br><span class="brique-detail-cell">' + esc(d.description.substring(0,80)) + (d.description.length>80?'...':'') + '</span>' : '') +
+          '</td>' +
+          '<td><span class="badge" style="font-size:9px;background:var(--bg-subtle);color:var(--accent)">' + esc(d.type_brique || '-') + '</span></td>' +
+          '<td style="font-size:11px">' + (esc(d.version_actuelle) || '-') + '</td>' +
+          '<td style="font-size:11px">' + (esc(d.version_utilisee) || '-') + '</td>' +
+          '<td style="font-size:10px">' + (esc(d.licence) || '-') + '</td>' +
+          '<td style="font-size:10px">' + (esc(d.cout) || '-') + '</td>' +
+          '<td><span class="badge" style="font-size:9px;background:' + statColor + '22;color:' + statColor + '">' + esc(d.statut || '-') + '</span></td>' +
+          '<td style="font-size:10px">' + (esc(d.requires_wp) || '-') + '</td>' +
+          '<td style="font-size:10px">' + (esc(d.requires_php) || '-') + '</td>' +
+          '<td style="font-size:10px;max-width:80px;overflow:hidden;text-overflow:ellipsis" title="' + esc(d.requires_plugins) + '">' + (esc(d.requires_plugins) || '-') + '</td>' +
+          '<td style="font-size:10px">' + (esc(d.pays_origine) || '-') + '</td>' +
+          '<td style="font-size:10px">' + (esc(d.annee_creation) || '-') + '</td>' +
+          '<td style="font-size:10px;text-align:center">' + renderVulnCell(d.vulnerabilites) + '</td>' +
+          '<td style="font-size:11px">' + (esc(d.responsable) || '-') + '</td>' +
+          '<td style="white-space:nowrap">' +
+            '<button class="btn btn-ghost btn-sm" onclick="showBriqueDetail(' + d.id + ')" style="padding:2px 6px;font-size:10px" title="Voir les d\u00e9tails">Voir</button> ' +
+            '<button class="btn btn-ghost btn-sm" onclick="editBrique(' + d.id + ')" style="padding:2px 6px;font-size:10px" title="Modifier">Modifier</button> ' +
+            '<button class="btn btn-ghost btn-sm" onclick="confirmDeleteBrique(' + d.id + ',\'' + jesc(d.nom) + '\')" style="padding:2px 6px;font-size:10px" title="Supprimer">Supprimer</button>' +
+          '</td></tr>';
+      });
+      h += '</tbody></table>';
+      table.innerHTML = h;
+    }
+
+    window.filterBriques = function() {
+      var q = document.getElementById('briques-search').value.toLowerCase();
+      var typeF = document.getElementById('briques-filter-type').value;
+      var statF = document.getElementById('briques-filter-statut').value;
+      var data = _briquesData;
+      if (q) data = data.filter(function(d) { return (d.nom||'').toLowerCase().includes(q) || (d.editeur||'').toLowerCase().includes(q) || (d.description||'').toLowerCase().includes(q) || (d.tags||'').toLowerCase().includes(q); });
+      if (typeF) data = data.filter(function(d) { return d.type_brique === typeF; });
+      if (statF) data = data.filter(function(d) { return d.statut === statF; });
+      renderBriques(data);
+    };
+
+    window.showBriqueForm = function(data) {
+      document.getElementById('brique-detail-view').style.display = 'none';
+      document.getElementById('brique-form-view').style.display = 'block';
+      document.getElementById('brique-id').value = data ? data.id : '';
+      document.getElementById('brique-nom').value = data ? data.nom : '';
+      document.getElementById('brique-type').value = data ? (data.type_brique||'') : '';
+      document.getElementById('brique-description').value = data ? (data.description||'') : '';
+      document.getElementById('brique-editeur').value = data ? (data.editeur||'') : '';
+      document.getElementById('brique-pays').value = data ? (data.pays_origine||'') : '';
+      document.getElementById('brique-annee').value = data ? (data.annee_creation||'') : '';
+      document.getElementById('brique-version-actuelle').value = data ? (data.version_actuelle||'') : '';
+      document.getElementById('brique-version-utilisee').value = data ? (data.version_utilisee||'') : '';
+      document.getElementById('brique-licence').value = data ? (data.licence||'') : '';
+      document.getElementById('brique-cout').value = data ? (data.cout||'') : '';
+      document.getElementById('brique-statut').value = data ? (data.statut||'') : '';
+      document.getElementById('brique-editeur-url').value = data ? (data.editeur_url||'') : '';
+      document.getElementById('brique-doc-url').value = data ? (data.documentation_url||'') : '';
+      document.getElementById('brique-repo-url').value = data ? (data.repository_url||'') : '';
+      document.getElementById('brique-responsable').value = data ? (data.responsable||'') : '';
+      document.getElementById('brique-service').value = data ? (data.service_concerne||'') : '';
+      document.getElementById('brique-tags').value = data ? (data.tags||'') : '';
+      document.getElementById('brique-notes').value = data ? (data.notes||'') : '';
+      document.getElementById('brique-requires-wp').value = data ? (data.requires_wp||'') : '';
+      document.getElementById('brique-requires-php').value = data ? (data.requires_php||'') : '';
+      document.getElementById('brique-requires-plugins').value = data ? (data.requires_plugins||'') : '';
+      try {
+        var vuln = data && data.vulnerabilites ? JSON.parse(data.vulnerabilites) : {};
+        document.getElementById('brique-vuln-statut').value = vuln.statut || '';
+        document.getElementById('brique-vuln-details').value = vuln.details || '';
+      } catch(e) {
+        document.getElementById('brique-vuln-statut').value = '';
+        document.getElementById('brique-vuln-details').value = '';
+      }
+      document.getElementById('brique-drawer-title').textContent = data ? 'Modifier une brique' : 'Nouvelle brique';
+      document.getElementById('brique-drawer-sub').textContent = data ? data.nom : 'Ajouter un composant du socle applicatif';
+      document.getElementById('brique-delete-btn').style.display = data ? 'inline-block' : 'none';
+      document.getElementById('brique-save-btn').textContent = data ? 'Enregistrer' : 'Ajouter';
+      document.getElementById('brique-drawer-overlay').classList.add('open');
+      document.getElementById('brique-drawer').classList.add('open');
+      document.getElementById('brique-nom').focus();
+    };
+
+    window.showBriqueDetail = function(id) {
+      var d = _briquesData.find(function(x) { return x.id === id; });
+      if (!d) return;
+      var vulnHtml = '';
+      try {
+        var v = d.vulnerabilites ? JSON.parse(d.vulnerabilites) : {};
+        var vColor = 'var(--success)'; var vIcon = '&#x2713; Aucune';
+        if (v.statut && v.statut.indexOf('Vulnerabilite') !== -1) { vColor = 'var(--danger)'; vIcon = '&#x26A0; Oui'; }
+        else if (v.statut && v.statut.indexOf('Non evalue') !== -1) { vColor = 'var(--warning)'; vIcon = '? Non evalue'; }
+        else if (v.statut) vIcon = '&#x2713; ' + esc(v.statut);
+        vulnHtml = '<span style="color:' + vColor + ';font-weight:600">' + vIcon + '</span>';
+        if (v.details) vulnHtml += '<pre style="font-size:10px;margin:4px 0 0;white-space:pre-wrap;color:var(--text-muted)">' + esc(v.details) + '</pre>';
+      } catch(e) { vulnHtml = '<span style="color:var(--text-muted)">—</span>'; }
+
+      var links = '';
+      if (d.editeur_url) links += '<a href="' + esc(d.editeur_url) + '" target="_blank" class="btn btn-ghost btn-sm" style="margin:2px">Site officiel</a> ';
+      if (d.documentation_url) links += '<a href="' + esc(d.documentation_url) + '" target="_blank" class="btn btn-ghost btn-sm" style="margin:2px">Documentation</a> ';
+      if (d.repository_url) links += '<a href="' + esc(d.repository_url) + '" target="_blank" class="btn btn-ghost btn-sm" style="margin:2px">Repository</a> ';
+
+      var tagsHtml = d.tags ? d.tags.split(',').map(function(t){ return '<span class="badge" style="font-size:9px;background:var(--bg-subtle);color:var(--accent);margin:1px">' + esc(t.trim()) + '</span>'; }).join(' ') : '—';
+
+      var html =
+        '<div class="detail-section" style="padding:0">' +
+          '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Type</label><div style="font-size:13px">' + esc(d.type_brique || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Statut</label><div style="font-size:13px">' + esc(d.statut || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Version actuelle</label><div style="font-size:13px">' + esc(d.version_actuelle || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Version utilis\u00e9e</label><div style="font-size:13px">' + esc(d.version_utilisee || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Licence</label><div style="font-size:13px">' + esc(d.licence || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Co\u00fbt</label><div style="font-size:13px">' + esc(d.cout || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Requires WP</label><div style="font-size:13px">' + esc(d.requires_wp || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Requires PHP</label><div style="font-size:13px">' + esc(d.requires_php || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Requires Plugins</label><div style="font-size:13px">' + esc(d.requires_plugins || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">\u00c9diteur</label><div style="font-size:13px">' + esc(d.editeur || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Pays d\'origine</label><div style="font-size:13px">' + esc(d.pays_origine || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Ann\u00e9e cr\u00e9ation</label><div style="font-size:13px">' + esc(d.annee_creation || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Responsable</label><div style="font-size:13px">' + esc(d.responsable || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Service</label><div style="font-size:13px">' + esc(d.service_concerne || '—') + '</div></div>' +
+            '<div><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Vuln\u00e9rabilit\u00e9s</label><div style="font-size:13px">' + vulnHtml + '</div></div>' +
+          '</div>' +
+          (d.description ? '<div style="margin-top:12px"><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Description</label><div style="font-size:12px;color:var(--text);line-height:1.5">' + esc(d.description) + '</div></div>' : '') +
+          (links ? '<div style="margin-top:12px"><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Liens</label><div style="font-size:13px;margin-top:4px">' + links + '</div></div>' : '') +
+          (tagsHtml !== '—' ? '<div style="margin-top:12px"><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Tags</label><div style="font-size:13px;margin-top:4px">' + tagsHtml + '</div></div>' : '') +
+          (d.notes ? '<div style="margin-top:12px"><label style="font-size:9px;color:var(--text-muted);text-transform:uppercase">Notes</label><div style="font-size:12px;color:var(--text);line-height:1.5;white-space:pre-wrap">' + esc(d.notes) + '</div></div>' : '') +
+        '</div>' +
+        '<div class="form-actions" style="border:none;padding:12px 0 0">' +
+          '<button class="btn btn-ghost" onclick="closeBriqueDrawer()">Fermer</button> ' +
+          '<button class="btn" onclick="editBrique(' + d.id + ')">Modifier</button>' +
+        '</div>';
+
+      document.getElementById('brique-detail-view').innerHTML = html;
+      document.getElementById('brique-detail-view').style.display = 'block';
+      document.getElementById('brique-form-view').style.display = 'none';
+      document.getElementById('brique-drawer-title').textContent = d.nom;
+      document.getElementById('brique-drawer-sub').textContent = 'D\u00e9tails de la brique logicielle';
+      document.getElementById('brique-drawer-overlay').classList.add('open');
+      document.getElementById('brique-drawer').classList.add('open');
+    };
+
+    window.editBrique = function(id) {
+      var d = _briquesData.find(function(x) { return x.id === id; });
+      if (d) showBriqueForm(d);
+    };
+
+    window.saveBrique = async function() {
+      var id = document.getElementById('brique-id').value;
+      var nom = document.getElementById('brique-nom').value.trim();
+      if (!nom) { alert('Le nom est obligatoire.'); return; }
+      var vulnStatut = document.getElementById('brique-vuln-statut').value.trim();
+      var vulnDetails = document.getElementById('brique-vuln-details').value.trim();
+      var payload = {
+        nom: nom,
+        type_brique: document.getElementById('brique-type').value,
+        description: document.getElementById('brique-description').value.trim(),
+        editeur: document.getElementById('brique-editeur').value.trim(),
+        pays_origine: document.getElementById('brique-pays').value.trim(),
+        annee_creation: document.getElementById('brique-annee').value.trim(),
+        version_actuelle: document.getElementById('brique-version-actuelle').value.trim(),
+        version_utilisee: document.getElementById('brique-version-utilisee').value.trim(),
+        licence: document.getElementById('brique-licence').value.trim(),
+        cout: document.getElementById('brique-cout').value.trim(),
+        statut: document.getElementById('brique-statut').value.trim(),
+        editeur_url: document.getElementById('brique-editeur-url').value.trim(),
+        documentation_url: document.getElementById('brique-doc-url').value.trim(),
+        repository_url: document.getElementById('brique-repo-url').value.trim(),
+        responsable: document.getElementById('brique-responsable').value.trim(),
+        service_concerne: document.getElementById('brique-service').value.trim(),
+        tags: document.getElementById('brique-tags').value.trim(),
+        notes: document.getElementById('brique-notes').value.trim(),
+        requires_wp: document.getElementById('brique-requires-wp').value.trim(),
+        requires_php: document.getElementById('brique-requires-php').value.trim(),
+        requires_plugins: document.getElementById('brique-requires-plugins').value.trim(),
+        vulnerabilites: JSON.stringify({statut: vulnStatut, details: vulnDetails})
+      };
+      try {
+        if (id) {
+          await api('/api/briques/' + id, {method:'PUT', body: JSON.stringify(payload), headers:{'Content-Type':'application/json'}});
+        } else {
+          await api('/api/briques', {method:'POST', body: JSON.stringify(payload), headers:{'Content-Type':'application/json'}});
+        }
+        closeBriqueDrawer();
+        _briquesData = await api('/api/briques');
+        renderBriquesKpi(_briquesData);
+        renderBriques(_briquesData);
+      } catch(e) {
+        alert('Erreur: ' + e.message);
+      }
+    };
+
+    window.confirmDeleteBrique = function(id, nom) {
+      if (!confirm('Supprimer la brique "' + nom + '" ?')) return;
+      deleteBrique(id);
+    };
+
+    window.deleteBrique = async function(id) {
+      id = id || document.getElementById('brique-id').value;
+      if (!id) return;
+      try {
+        await api('/api/briques/' + id, {method:'DELETE'});
+        closeBriqueDrawer();
+        _briquesData = await api('/api/briques');
+        renderBriquesKpi(_briquesData);
+        renderBriques(_briquesData);
+      } catch(e) {
+        alert('Erreur: ' + e.message);
+      }
+    };
+
+    window.closeBriqueDrawer = function() {
+      document.getElementById('brique-drawer-overlay').classList.remove('open');
+      document.getElementById('brique-drawer').classList.remove('open');
+      document.getElementById('brique-detail-view').style.display = 'none';
+      document.getElementById('brique-form-view').style.display = 'block';
+    };
+
+    // ─── Theme ──────────────────────────────────────────────────────
+    var savedTheme = localStorage.getItem('briques-theme') || 'light';
+    document.body.className = 'theme-' + savedTheme;
+    updateThemeIcon(savedTheme);
+
+    window.toggleTheme = function() {
+      var isDark = document.body.classList.contains('theme-dark');
+      document.body.classList.toggle('theme-dark', !isDark);
+      document.body.classList.toggle('theme-light', isDark);
+      var theme = isDark ? 'light' : 'dark';
+      localStorage.setItem('briques-theme', theme);
+      updateThemeIcon(theme);
+    };
+
+    function updateThemeIcon(theme) {
+      var icon = document.getElementById('theme-icon');
+      if (theme === 'dark') {
+        icon.innerHTML = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
+      } else {
+        icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+      }
+    }
+
+    window.exportBriquesJson = function() {
+      if (!_briquesData.length) { alert('Aucune brique à exporter.'); return; }
+      var exportData = _briquesData.map(function(d) {
+        var obj = {};
+        var cols = ['nom','type_brique','description','editeur','pays_origine','annee_creation','version_actuelle','version_utilisee','licence','cout','statut','editeur_url','documentation_url','repository_url','responsable','service_concerne','tags','notes','vulnerabilites','requires_wp','requires_php','requires_plugins'];
+        cols.forEach(function(c) { if (d[c] != null && d[c] !== '') obj[c] = d[c]; });
+        return obj;
+      });
+      var blob = new Blob([JSON.stringify({briques: exportData}, null, 2)], {type: 'application/json'});
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'briques_export_' + new Date().toISOString().slice(0,10).replace(/-/g,'') + '.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    };
+
+    window.importBriquesJson = async function(event) {
+      var file = event.target.files[0];
+      if (!file) return;
+      try {
+        var text = await file.text();
+        var data = JSON.parse(text);
+        var briques = data.briques || (Array.isArray(data) ? data : [data]);
+        if (!briques.length) { alert('Aucune brique trouvee dans le fichier JSON.'); return; }
+        if (!confirm('Importer ' + briques.length + ' brique(s) ?')) return;
+        var resp = await fetch('/api/briques/import', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ briques: briques })
+        });
+        var result = await resp.json();
+        alert('Import termine : ' + result.imported + ' ajoutee(s), ' + (result.errors || 0) + ' erreur(s).');
+        loadBriques();
+      } catch (e) {
+        alert('Erreur import : ' + e.message);
+      }
+      event.target.value = '';
+    };
+
+    loadBriques();
+  </script>
+</body>
+</html>
